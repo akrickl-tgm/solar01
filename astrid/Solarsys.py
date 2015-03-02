@@ -1,7 +1,5 @@
 __author__ = 'Astrid Krickl'
 
-# import string
-# import tkinter as tk         # fuer splashscreen
 from astrid import Gestirn
 from astrid.Texturen import *
 from OpenGL.GL import *
@@ -30,7 +28,8 @@ class universe():
     """
     def InitGL(self, Width, Height):
         t = Texturen()
-        self.quadratic = t.LoadTextures_Jupiter()
+        self.quadratic = t.LoadTexture("jupiter")
+        self.quadratic_p1 = t.LoadTexture("sonne")
 
         glEnable(GL_TEXTURE_2D)
         glClearColor(0.0, 0.0, 0.0, 0.0)    # Hintergrundfarbe
@@ -83,11 +82,11 @@ class universe():
         # Planet P1
         self.rot_pl2 = Gestirn.rotation(self.rot_pl2, 0, 0.04, 0)                           # Rotation
         Gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic)
-        # Radius; rotation koord, light, x,y,z, textur - 0 sonne - 1 jupiter
+        # Radius; rotation koord, light, x,y,z, textur x- 0 sonne - 1 jupiterx
 
         # Planet P2
         self.rot_pl3 = Gestirn.rotation(self.rot_pl3, 0, 0.02, 0)                           # Rotation
-        Gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic)
+        Gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_p1)
 
         # Mond
         self.rot_pl4 = Gestirn.rotation(self.rot_pl4, 0.0, 0.03, 0.0)                        # Rotation
