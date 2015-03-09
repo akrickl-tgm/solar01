@@ -11,7 +11,8 @@ class Splash:
 
     def __enter__(self):
         # Hide the root while it is built.
-        self.__root.withdraw()
+        #self.__root.withdraw()
+        self.__root.wm_withdraw()
         # Create components of splash screen.
         window = tkinter.Toplevel(self.__root)
         canvas = tkinter.Canvas(window)

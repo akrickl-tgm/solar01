@@ -5,6 +5,7 @@ from astrid.Texturen import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from tkinter import *
 
 ESCAPE = '\033'
 
@@ -50,6 +51,14 @@ class universe():
         glLightfv(GL_LIGHT0, GL_DIFFUSE, (1.0, 1.0, 1.0, 1.0))  # Diffuse Light
         glLightfv(GL_LIGHT0, GL_POSITION, (0.0, 0.0, 2.0, 1.0)) # Position The Light
         glEnable(GL_LIGHT0)
+
+        b = Button(master=None, text='test', command=self.testbu)
+        b.pack()
+
+        mainloop()
+
+    def testbu(self):
+        print('test')
 
     """
     Wenn die groesse vom Fenster geaendert wird
