@@ -8,10 +8,10 @@ import tkinter
 
 def main(sc):
         #splashscreen
-        tkRoot = tkinter.Tk()
+        """tkRoot = tkinter.Tk()
         s = Splash(tkRoot, 'splash.gif', 3.0)
         s.__enter__()
-        s.__exit__()
+        s.__exit__()"""
 
         #solarsystem
         glutInit(sys.argv)
