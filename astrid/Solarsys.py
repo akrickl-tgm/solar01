@@ -52,10 +52,10 @@ class universe():
         glLightfv(GL_LIGHT0, GL_POSITION, (0.0, 0.0, 2.0, 1.0)) # Position The Light
         glEnable(GL_LIGHT0)
 
-        b = Button(master=None, text='test', command=self.testbu)
-        b.pack()
+        #b = Button(master=None, text='test', command=self.testbu)
+        #b.pack()
 
-        mainloop()
+        #mainloop()
 
     def testbu(self):
         print('test')
