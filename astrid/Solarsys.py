@@ -93,3 +93,6 @@ class universe():
         Gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 0, 0, -10, self.quadratic)
 
         glutSwapBuffers()  # zeichnen
+
+
+

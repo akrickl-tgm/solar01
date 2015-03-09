@@ -2,9 +2,18 @@ __author__ = 'Astrid Krickl'
 
 from astrid.Solarsys import *
 import sys
+from astrid.splashscreen import *
+import tkinter
 
 
 def main(sc):
+        #splashscreen
+        tkRoot = tkinter.Tk()
+        s = Splash(tkRoot, 'splash.gif', 3.0)
+        s.__enter__()
+        s.__exit__()
+
+        #solarsystem
         glutInit(sys.argv)
 
         glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)   # Select type of Display mode
