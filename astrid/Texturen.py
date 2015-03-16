@@ -9,7 +9,7 @@ from PIL.Image import *      # fuer texturen
 class Texturen():
 
     @staticmethod
-    def LoadTexture(pic):
+    def LoadTexture(pic, mod):
 
         if pic == "jupiter":
             # Bild auswaehlen
@@ -28,7 +28,8 @@ class Texturen():
 
         # Textur erstellen
         textures = glGenTextures(1)
-        glBindTexture(GL_TEXTURE_2D, textures)  # 2d texture (x and y size)
+        if mod == True:
+            glBindTexture(GL_TEXTURE_2D, textures)  # 2d texture (x and y size)
 
         # Planet P1
        # glBindTexture(GL_TEXTURE_2D, int(textures[2]))

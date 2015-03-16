@@ -25,16 +25,17 @@ class universe():
         self.quadratic_jupiter = None
         self.quadratic_mond = None
         self.quadratic_mars = None
-        self.pos = True
+        self.pos = False
+        self.mod = True  # modus texturen an oder aus
     """
     setup für opengl
     """
     def InitGL(self, Width, Height):
         #t = Texturen()
-        self.quadratic_jupiter = Texturen.LoadTexture("jupiter")
-        self.quadratic_sonne = Texturen.LoadTexture("sonne")
-        self.quadratic_mars = Texturen.LoadTexture("mars")
-        self.quadratic_mond = Texturen.LoadTexture("mond")
+        self.quadratic_jupiter = Texturen.LoadTexture("jupiter", True)
+        self.quadratic_sonne = Texturen.LoadTexture("sonne", True)
+        self.quadratic_mars = Texturen.LoadTexture("mars", True)
+        self.quadratic_mond = Texturen.LoadTexture("mond", True)
 
 
         glEnable(GL_TEXTURE_2D)
@@ -57,7 +58,7 @@ class universe():
         glLightfv(GL_LIGHT0, GL_POSITION, (0.0, 0.0, 2.0, 1.0)) # Position The Light
         glEnable(GL_LIGHT0)
 
-        glutKeyboardFunc(self.keyPressed)
+        glutKeyboardFunc(self.keyPressed)  # steuerung ueber die tatstatur aktivieren
 
     """
     Wenn die groesse vom Fenster geaendert wird
@@ -109,6 +110,15 @@ class universe():
         else:
             self.pos = True
 
+    def changeTextures(self):
+        pass
+
     def keyPressed(self, *args):
         if args[0] == b'c':
             self.changePos()
+
+        if args[0] == b't':
+            print ("t pressed")
+            self.changeTextures()
+
+
