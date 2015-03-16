@@ -11,13 +11,16 @@ class Gestirn:
     def DrawGLScene_P(self, radius, rot, light, x, y, z, txt):
 
         glLoadIdentity()                  # Screen neu laden
+        # Position des Planeten im Raum
         glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
 
         glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
         glRotatef(rot[1], 0.0, 1.0, 0.0)  # Rotatation um Y-Achse
         glRotatef(rot[2], 0.0, 0.0, 1.0)  # Rotatation um Z-Achse
 
-        glTranslatef(3.0, 0.0, 2.0)       # neu Positionieren am Screen (x,y,z)
+        # Entfernung vom Fixstern. dh auf dieser Bahn bewegt sich dann der Planet
+        # Mithilfe der setAbstand-Methode setzen
+        glTranslatef(2.0, 0, 2.0)       # neu Positionieren am Screen (x,y,z)
 
         glEnable(GL_LIGHTING)             # Licht an
         """

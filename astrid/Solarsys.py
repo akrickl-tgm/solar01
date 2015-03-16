@@ -81,19 +81,16 @@ class universe():
         self.gestirn.DrawGLScene_P(1, self.rot_pl1, self.light, -1, 0, -12, self.quadratic)
 
         # Planet P1
-        self.rot_pl2 = self.gestirn.rotation(self.rot_pl2, 0, 0.04, 0)                           # Rotation
-        self.gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic)
+        self.rot_pl2 = self.gestirn.rotation(self.rot_pl2, 0, 1, 0)                           # Rotation
+        self.gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 1, 0, -10, self.quadratic)
         # Radius; rotation koord, light, x,y,z, textur x- 0 sonne - 1 jupiterx
 
         # Planet P2
-        self.rot_pl3 = self.gestirn.rotation(self.rot_pl3, 0, 0.02, 0)                           # Rotation
+        self.rot_pl3 = self.gestirn.rotation(self.rot_pl3, 0, 0.8, 0)                           # Rotation
         self.gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_p1)
 
         # Mond
-        self.rot_pl4 = self.gestirn.rotation(self.rot_pl4, 0.0, 0.03, 0.0)                        # Rotation
-        self.gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 0, 0, -10, self.quadratic)
+        self.rot_pl4 = self.gestirn.rotation(self.rot_pl4, 0.0, 0.9, 0.0)                   # Rotation
+        self.gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 2, 0, -10, self.quadratic)
 
         glutSwapBuffers()  # zeichnen
-
-
-
