@@ -14,9 +14,9 @@ class Gestirn:
         glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
 
         #position von oben
-        if pos == True:
+        if pos is True:
             glRotate(90, 1, 0, 0)
-        elif pos == False:
+        elif pos is False:
             glRotate(0, 1, 0, 1)
 
         glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse

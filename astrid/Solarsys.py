@@ -31,11 +31,11 @@ class universe():
     setup für opengl
     """
     def InitGL(self, Width, Height):
-        #t = Texturen()
-        self.quadratic_jupiter = Texturen.LoadTexture("jupiter", True)
-        self.quadratic_sonne = Texturen.LoadTexture("sonne", True)
-        self.quadratic_mars = Texturen.LoadTexture("mars", True)
-        self.quadratic_mond = Texturen.LoadTexture("mond", True)
+
+        self.quadratic_jupiter = Texturen.LoadTexture("./jupiter.jpg", self.mod)
+        self.quadratic_sonne = Texturen.LoadTexture("./sonne.jpg", self.mod)
+        self.quadratic_mars = Texturen.LoadTexture("./mars1.jpg", self.mod)
+        self.quadratic_mond = Texturen.LoadTexture("./mond1.jpg", self.mod)
 
 
         glEnable(GL_TEXTURE_2D)
@@ -103,22 +103,28 @@ class universe():
 
         glutSwapBuffers()  # zeichnen
 
-
     def changePos(self):
-        if self.pos == True:
+        if self.pos is True:
             self.pos = False
         else:
             self.pos = True
 
     def changeTextures(self):
-        pass
+        if self.mod is True:
+            self.mod = False
+        else:
+            self.mod = True
+
+        self.quadratic_jupiter = Texturen.LoadTexture("./jupiter.jpg", self.mod)
+        self.quadratic_sonne = Texturen.LoadTexture("./sonne.jpg", self.mod)
+        self.quadratic_mars = Texturen.LoadTexture("./mars1.jpg", self.mod)
+        self.quadratic_mond = Texturen.LoadTexture("./mond1.jpg", self.mod)
 
     def keyPressed(self, *args):
         if args[0] == b'c':
             self.changePos()
 
         if args[0] == b't':
-            print ("t pressed")
             self.changeTextures()
 
 
