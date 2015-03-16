@@ -21,16 +21,20 @@ class universe():
         #licht
         self.light = 0
         # texturen
-        self.quadratic = None
-        self.quadratic_p1 = None
-
+        self.quadratic_sonne = None
+        self.quadratic_jupiter = None
+        self.quadratic_mond = None
+        self.quadratic_mars = None
     """
     setup für opengl
     """
     def InitGL(self, Width, Height):
-        t = Texturen()
-        self.quadratic = t.LoadTexture("jupiter")
-        self.quadratic_p1 = t.LoadTexture("sonne")
+        #t = Texturen()
+        self.quadratic_jupiter = Texturen.LoadTexture("jupiter")
+        self.quadratic_sonne = Texturen.LoadTexture("sonne")
+        self.quadratic_mars = Texturen.LoadTexture("mars")
+        self.quadratic_mond = Texturen.LoadTexture("mond")
+
 
         glEnable(GL_TEXTURE_2D)
         glClearColor(0.0, 0.0, 0.0, 0.0)    # Hintergrundfarbe
@@ -78,20 +82,20 @@ class universe():
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)  # Screen loeschen und depth buffer loeschen
 
         # Sonne
-        self.gestirn.DrawGLScene_P(1, self.rot_pl1, self.light, -1, 0, -12, self.quadratic)
+        self.gestirn.DrawGLScene_P(1, self.rot_pl1, self.light, -1, 0, -12, self.quadratic_sonne)
 
         # Planet P1
         self.rot_pl2 = self.gestirn.rotation(self.rot_pl2, 0, 0.04, 0)                           # Rotation
-        self.gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic)
+        self.gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic_mars)
         # Radius; rotation koord, light, x,y,z, textur x- 0 sonne - 1 jupiterx
 
         # Planet P2
         self.rot_pl3 = self.gestirn.rotation(self.rot_pl3, 0, 0.02, 0)                           # Rotation
-        self.gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_p1)
+        self.gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_jupiter)
 
         # Mond
         self.rot_pl4 = self.gestirn.rotation(self.rot_pl4, 0.0, 0.03, 0.0)                        # Rotation
-        self.gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 0, 0, -10, self.quadratic)
+        self.gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 0, 0, -10, self.quadratic_mond)
 
         glutSwapBuffers()  # zeichnen
 

@@ -13,13 +13,21 @@ class Gestirn:
         glLoadIdentity()                  # Screen neu laden
         glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
 
+        #glRotate(90, 1, 0, 0)
+
         glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
         glRotatef(rot[1], 0.0, 1.0, 0.0)  # Rotatation um Y-Achse
         glRotatef(rot[2], 0.0, 0.0, 1.0)  # Rotatation um Z-Achse
 
         glTranslatef(3.0, 0.0, 2.0)       # neu Positionieren am Screen (x,y,z)
 
-        glEnable(GL_LIGHTING)             # Licht an
+        glBindTexture(GL_TEXTURE_2D, txt)
+        quadratic = gluNewQuadric()
+        gluQuadricNormals(quadratic, GLU_SMOOTH)
+        gluQuadricTexture(quadratic, GL_TRUE)
+
+
+        #glEnable(GL_LIGHTING)             # Licht an
         """
         if light:
             glEnable(GL_LIGHTING)
@@ -28,15 +36,7 @@ class Gestirn:
         """
 
         # Planet erstellen
-        """
-        t = Texturen()
-        if txt == 0:
-            qua = t.LoadTextures_Sonne()
-        else:
-            qua = t.LoadTextures_Jupiter()
-            """
-
-        gluSphere(txt, radius, 32, 32)  # Parameter: Radius; Longitude; Latitude Segments
+        gluSphere(quadratic, radius, 32, 32)  # Parameter: Radius; Longitude; Latitude Segments
 
     def rotation(self, rot, x, y, z):
         #Rotation um die Sonne
