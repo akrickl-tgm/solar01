@@ -8,13 +8,16 @@ class Gestirn:
     def __init__(self):
         pass
 
-    def DrawGLScene_P(self, radius, rot, light, x, y, z, txt):
+    def DrawGLScene_P(self, radius, rot, light, x, y, z, txt, pos):
 
         glLoadIdentity()                  # Screen neu laden
         glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
 
         #position von oben
-        #glRotate(90, 1, 0, 0)
+        if pos == True:
+            glRotate(90, 1, 0, 0)
+        elif pos == False:
+            glRotate(0, 1, 0, 1)
 
         glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
         glRotatef(rot[1], 0.0, 1.0, 0.0)  # Rotatation um Y-Achse
