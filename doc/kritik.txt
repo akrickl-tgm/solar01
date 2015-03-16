@@ -1,0 +1,12 @@
+libraries beschreiben und mit code snippets einsatz zeigen 
+
+fixstern kann keinen mond haben 
+mond auch nciht 
+nicht mond nennen 
+anstraktion vongestirn überdenken
+getMond(INDEX) 
+
+
+richtungslicht nur auf fixstern
+mehrere fixsterne mölich machen
+quellen gscheid 
