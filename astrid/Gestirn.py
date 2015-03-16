@@ -13,7 +13,7 @@ class Gestirn:
         glLoadIdentity()                  # Screen neu laden
         glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
 
-        #position von oben 
+        #position von oben
         #glRotate(90, 1, 0, 0)
 
         glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
