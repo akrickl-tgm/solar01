@@ -32,10 +32,10 @@ class universe():
     """
     def InitGL(self, Width, Height):
 
-        self.quadratic_jupiter = Texturen.LoadTexture("./jupiter.jpg", self.mod)
-        self.quadratic_sonne = Texturen.LoadTexture("./sonne.jpg", self.mod)
-        self.quadratic_mars = Texturen.LoadTexture("./mars1.jpg", self.mod)
-        self.quadratic_mond = Texturen.LoadTexture("./mond1.jpg", self.mod)
+        self.quadratic_jupiter = Texturen.LoadTexture("../data/jupiter.jpg", self.mod)
+        self.quadratic_sonne = Texturen.LoadTexture("../data/sonne.jpg", self.mod)
+        self.quadratic_mars = Texturen.LoadTexture("../data/mars1.jpg", self.mod)
+        self.quadratic_mond = Texturen.LoadTexture("../data/mond1.jpg", self.mod)
 
 
         glEnable(GL_TEXTURE_2D)
@@ -115,10 +115,10 @@ class universe():
         else:
             self.mod = True
 
-        self.quadratic_jupiter = Texturen.LoadTexture("./jupiter.jpg", self.mod)
-        self.quadratic_sonne = Texturen.LoadTexture("./sonne.jpg", self.mod)
-        self.quadratic_mars = Texturen.LoadTexture("./mars1.jpg", self.mod)
-        self.quadratic_mond = Texturen.LoadTexture("./mond1.jpg", self.mod)
+        self.quadratic_jupiter = Texturen.LoadTexture("../data/jupiter.jpg", self.mod)
+        self.quadratic_sonne = Texturen.LoadTexture("../data/sonne.jpg", self.mod)
+        self.quadratic_mars = Texturen.LoadTexture("../data/mars1.jpg", self.mod)
+        self.quadratic_mond = Texturen.LoadTexture("../data/mond1.jpg", self.mod)
 
     def keyPressed(self, *args):
         if args[0] == b'c':

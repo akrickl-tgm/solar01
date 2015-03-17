@@ -9,7 +9,7 @@ import tkinter
 def main(sc):
         #splashscreen
         tkRoot = tkinter.Tk()
-        s = Splash(tkRoot, 'splash.gif', 2.0)
+        s = Splash(tkRoot, '../data/splash.gif', 2.0)
         s.__enter__()
         s.__exit__()
 
