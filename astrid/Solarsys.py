@@ -85,23 +85,42 @@ class universe():
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)  # Screen loeschen und depth buffer loeschen
 
-        # Sonne
-        self.gestirn.DrawGLScene_P(1, self.rot_pl1, self.light, -1, 0, -12, self.quadratic_sonne, self.pos)
+        self.disable_light()
 
+        # Sonne
+        self.gestirn.DrawGLScene_P(2, self.rot_pl1, self.light, -1, 0, -12, self.quadratic_sonne, self.pos)
+
+        self.dolighting()
         # Planet P1
         self.rot_pl2 = self.gestirn.rotation(self.rot_pl2, 0, 0.04, 0)                           # Rotation
-        self.gestirn.DrawGLScene_P(0.5, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic_mars, self.pos)
+        self.gestirn.DrawGLScene_P(0.4, self.rot_pl2, self.light, 0.8, 0, -10, self.quadratic_mars, self.pos)
         # Radius; rotation koord, light, x,y,z, textur x- 0 sonne - 1 jupiterx
 
         # Planet P2
         self.rot_pl3 = self.gestirn.rotation(self.rot_pl3, 0, 0.02, 0)                           # Rotation
-        self.gestirn.DrawGLScene_P(0.5, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_jupiter, self.pos)
+        self.gestirn.DrawGLScene_P(0.7, self.rot_pl3, self.light, 3, 0, -10, self.quadratic_jupiter, self.pos)
 
         # Mond
         self.rot_pl4 = self.gestirn.rotation(self.rot_pl4, 0.0, 0.03, 0.0)                        # Rotation
-        self.gestirn.DrawGLScene_P(0.2, self.rot_pl4, self.light, 0, 0, -10, self.quadratic_mond, self.pos)
+        self.gestirn.DrawGLScene_P(0.1, self.rot_pl4, self.light, 0, 0, -10, self.quadratic_mond, self.pos)
 
         glutSwapBuffers()  # zeichnen
+
+    def dolighting(self):
+        glShadeModel(GL_SMOOTH)
+        glEnable(GL_CULL_FACE)
+        glEnable(GL_DEPTH_TEST)
+        glEnable(GL_LIGHTING)
+        glDepthFunc(GL_LESS)
+        lightZeroPosition = [0.,0.,0.,1.0]
+        lightZeroColor = [0.8,1.0,0.8,1.0] #green tinged
+
+        glLightfv(GL_LIGHT0, GL_POSITION, lightZeroPosition)
+        glLightfv(GL_LIGHT0, GL_DIFFUSE, lightZeroColor)
+        glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, 0.1)
+        glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0.05)
+        glEnable(GL_LIGHTING)
+        glEnable(GL_LIGHT0)
 
     def changePos(self):
         if self.pos is True:
@@ -126,5 +145,13 @@ class universe():
 
         if args[0] == b't':
             self.changeTextures()
+
+        if args[0] == b'l':
+            self.disable_light()
+
+    @staticmethod
+    def disable_light():
+        glDisable(GL_LIGHTING)
+        glDisable(GL_LIGHT0)
 
 
