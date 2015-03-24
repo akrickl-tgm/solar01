@@ -13,6 +13,8 @@ def main(sc):
         s.__enter__()
         s.__exit__()
 
+        tkRoot.withdraw()
+
         #solarsystem
         glutInit(sys.argv)
 
