@@ -1,19 +1,19 @@
-__author__ = 'Astrid Krickl'
+__author__ = 'Astrid Krickl, Daniel Herczeg'
 
-from astrid.Solarsys import *
 import sys
 from astrid.splashscreen import *
 import tkinter
+from astrid.Galaxie import *
 
 
 def main(sc):
-        #splashscreen
-        tkRoot = tkinter.Tk()
-        s = Splash(tkRoot, '../data/splash.gif', 2.0)
-        s.__enter__()
-        s.__exit__()
+        # splashscreen
+        # tkRoot = tkinter.Tk()
+        # s = Splash(tkRoot, '../data/splash.gif', 2.0)
+        # s.__enter__()
+        # s.__exit__()
 
-        tkRoot.withdraw()
+        # tkRoot.withdraw()
 
         #solarsystem
         glutInit(sys.argv)
@@ -25,10 +25,9 @@ def main(sc):
         glutDisplayFunc(sc.DrawGLScene)                           # Register the drawing function with glut
         glutIdleFunc(sc.DrawGLScene)                              # scene nochmal zeichnen
         glutReshapeFunc(sc.ReSizeGLScene)                         # fenstergroesse aendern
-        #glutKeyboardFunc(self.keyPressed)			                    # Tastertur verwenden
-        sc.InitGL(640, 480)                                       # fenster initialisieren
+        sc.init(640, 480)                                       # fenster initialisieren
         glutMainLoop()
 
 
-s = universe()
+s = Galaxie()
 main(s)

@@ -1,51 +1,67 @@
-__author__ = 'Astrid Krickl'
+__author__ = 'Astrid Krickl, Daniel Herczeg'
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from astrid.Texturen import *
 
 
 class Gestirn:
-    def __init__(self):
+    def __init__(self, position, anim, rotation, rotSpeed, rotPoint, entf_rotPoint, movSpeed, radius, textur, divisions):
+        self.position = position  # Position im XYZ-Raum
+        self.anim = anim  # Animationen an/aus
+        self.rotation = rotation  # Rotation um die eigene Achse
+        self.rotSpeed = rotSpeed  # Rotationsgeschwindigkeit
+        self.rotPoint = rotPoint  # Punkt, um den sich der Planet bewegen soll
+        self.entf_rotPoint = entf_rotPoint  # Entfernung von ebendiesem Punkt
+        self.movSpeed = movSpeed  # Orbitalgeschwindigkeit
+        self.radius = radius  # Radius des Himmelskoerpers
+        self.textur = textur  # Textur
+        self.divisions = divisions  # Unterteilungen. Mehr = feinere, schoenere Kugel
+        self.top = False
+
+    def init(self):
         pass
 
-    def DrawGLScene_P(self, radius, rot, light, x, y, z, txt, pos):
+    def update(self):
+        if self.anim:
+            self.rotate([0, 0, self.rotSpeed])
 
-        glLoadIdentity()                  # Screen neu laden
-        glTranslatef(x, y, z)             # Positionieren am Screen (x,y,z)
+    def draw(self, top, zoom):
+        # Identity-Matrix neu laden
+        glLoadIdentity()
 
-        #position von oben
-        if pos is True:
-            glRotate(90, 1, 0, 0)
-        elif pos is False:
-            glRotate(0, 1, 0, 1)
+        if top:
+            gluLookAt(0, 100-zoom, 0, 0, 0, -80, 0, 1, 0)
+        else:
+            gluLookAt(0, 0, 10-zoom, 0, 0, -80, 0, 1, 0)
 
-        glRotatef(rot[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
-        glRotatef(rot[1], 0.0, 1.0, 0.0)  # Rotatation um Y-Achse
-        glRotatef(rot[2], 0.0, 0.0, 1.0)  # Rotatation um Z-Achse
+        glTranslatef(self.position[0], self.position[1], self.position[2])
 
-        glTranslatef(3.0, 0.0, 2.0)       # neu Positionieren am Screen (x,y,z)
+        # Objekt um die eigene Achse drehen
+        glRotatef(self.rotation[0], 1.0, 0.0, 0.0)  # Rotatation um X-Achse
+        glRotatef(self.rotation[1], 0.0, 1.0, 0.0)  # Rotatation um Y-Achse
+        glRotatef(self.rotation[2], 0.0, 0.0, 1.0)  # Rotatation um Z-Achse
 
-        glBindTexture(GL_TEXTURE_2D, txt)
+        # Die Textur zuweisen
+        glBindTexture(GL_TEXTURE_2D, self.textur)
         quadratic = gluNewQuadric()
         gluQuadricNormals(quadratic, GLU_SMOOTH)
         gluQuadricTexture(quadratic, GL_TRUE)
 
+        # Zeichnet eine Kugel auf den Bildschirm
+        gluSphere(quadratic, self.radius, self.divisions, self.divisions)
 
-        #glEnable(GL_LIGHTING)             # Licht an
-        """
-        if light:
-            glEnable(GL_LIGHTING)
-        else:
-            glDisable(GL_LIGHTING)
-        """
+    def rotate(self, rotation):
+        self.rotation[0] += rotation[0]
+        self.rotation[1] += rotation[1]
+        self.rotation[2] += rotation[2]
 
-        # Planet erstellen
-        gluSphere(quadratic, radius, 32, 32)  # Parameter: Radius; Longitude; Latitude Segments
+    def translate(self, pos):
+        self.position[0] += pos[0]
+        self.position[1] += pos[1]
+        self.position[2] += pos[2]
 
-    def rotation(self, rot, x, y, z):
-        #Rotation um die Sonne
-        rot[0] = rot[0] + x  # X achse
-        rot[1] = rot[1] + y  # Y achse
-        rot[2] = rot[2] + z  # Z achse
+    def setAnimation(self, anim):
+        self.anim = anim
 
-        return rot
+    def setAbstand(self, abstand):
+        self.entf_rotPoint = abstand

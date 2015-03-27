@@ -9,7 +9,7 @@ from PIL.Image import *      # fuer texturen
 class Texturen():
 
     @staticmethod
-    def LoadTexture(pic, mod):
+    def LoadTexture(pic):
 
         image = open(pic)
 
@@ -20,13 +20,11 @@ class Texturen():
 
         # Textur erstellen
         textures = glGenTextures(1)
-        if mod is True:
-            glBindTexture(GL_TEXTURE_2D, textures)  # 2d texture (x and y size)
+        glBindTexture(GL_TEXTURE_2D, textures)  # 2d texture (x and y size)
 
         # Planet P1
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST)
         gluBuild2DMipmaps(GL_TEXTURE_2D, 3, ix, iy, GL_RGBA, GL_UNSIGNED_BYTE, image)
-
 
         return textures
