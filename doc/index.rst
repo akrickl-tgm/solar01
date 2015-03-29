@@ -1,5 +1,5 @@
 .. solar documentation master file, created by
-   sphinx-quickstart on Sun Mar 29 21:49:41 2015.
+   sphinx-quickstart on Sun Mar 29 22:10:04 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -14,7 +14,6 @@ Contents:
    Asteroid.rst
    Fixstern.rst
    Galaxie.rst
-   Gestirn.rst
    Light.rst
    Mond.rst
    Planet.rst
