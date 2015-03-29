@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# solarsystem documentation build configuration file, created by
-# sphinx-quickstart on Sun Mar 29 15:03:20 2015.
+# solar documentation build configuration file, created by
+# sphinx-quickstart on Sun Mar 29 21:49:41 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -33,7 +33,7 @@ extensions = [
 	'sphinx.ext.autodoc',
 	'sphinx.ext.doctest', 
 	'sphinx.ext.coverage', 
-	'sphinx.ext.viewcode'
+	'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'solarsystem'
+project = 'solar'
 copyright = '2015, Herczeg Krickl'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -57,7 +57,7 @@ copyright = '2015, Herczeg Krickl'
 # built documents.
 #
 # The short X.Y version.
-version = '2.2'
+version = '2.3'
 # The full version, including alpha/beta/rc tags.
 release = '03-29-2015'
 
@@ -73,7 +73,7 @@ release = '03-29-2015'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -182,7 +182,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'solarsystemdoc'
+htmlhelp_basename = 'solardoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -202,7 +202,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'solarsystem.tex', 'solarsystem Documentation',
+  ('index', 'solar.tex', 'solar Documentation',
    'Herczeg Krickl', 'manual'),
 ]
 
@@ -232,7 +232,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'solarsystem', 'solarsystem Documentation',
+    ('index', 'solar', 'solar Documentation',
      ['Herczeg Krickl'], 1)
 ]
 
@@ -246,8 +246,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'solarsystem', 'solarsystem Documentation',
-   'Herczeg Krickl', 'solarsystem', 'One line description of project.',
+  ('index', 'solar', 'solar Documentation',
+   'Herczeg Krickl', 'solar', 'One line description of project.',
    'Miscellaneous'),
 ]
 
