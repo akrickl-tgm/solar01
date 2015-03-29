@@ -1,7 +1,7 @@
 __author__ = 'Daniel'
 
-from astrid.Gestirn import *
-from astrid.Light import *
+from solarsystem.Gestirn import *
+from solarsystem.Light import *
 
 
 class Fixstern(Gestirn):

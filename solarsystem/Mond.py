@@ -1,6 +1,6 @@
 __author__ = 'Daniel Herczeg'
 
-from astrid.Gestirn import *
+from solarsystem.Gestirn import *
 from math import *
 
 class Mond(Gestirn):

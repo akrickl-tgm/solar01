@@ -1,13 +1,13 @@
 __author__ = 'Astrid Krickl, Daniel Herczeg'
 
-from astrid.Gestirn import *
-from astrid.Texturen import *
-from astrid.Light import *
-from astrid.Fixstern import *
+from solarsystem.Gestirn import *
+from solarsystem.Texturen import *
+from solarsystem.Light import *
+from solarsystem.Fixstern import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-from astrid.Planet import *
+from solarsystem.Planet import *
 
 ESCAPE = '\033'
 

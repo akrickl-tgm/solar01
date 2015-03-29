@@ -1,7 +1,7 @@
 __author__ = 'Daniel Herczeg'
 
-from astrid.Gestirn import Gestirn
-from astrid.Mond import Mond
+from solarsystem.Gestirn import Gestirn
+from solarsystem.Mond import Mond
 from math import *
 
 class Planet(Gestirn):

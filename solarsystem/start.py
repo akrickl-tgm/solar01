@@ -1,9 +1,9 @@
 __author__ = 'Astrid Krickl, Daniel Herczeg'
 
 import sys
-from astrid.splashscreen import *
+from solarsystem.splashscreen import *
 import tkinter
-from astrid.Galaxie import *
+from solarsystem.Galaxie import *
 
 
 def main(sc):
