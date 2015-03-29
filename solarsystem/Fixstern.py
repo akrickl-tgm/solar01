@@ -130,7 +130,7 @@ class Fixstern(Gestirn):
 
     def enableLight(self):
         """
-        aktiviert das licht 
+        aktiviert das licht
         :return:
         """
         self.licht.enable()
