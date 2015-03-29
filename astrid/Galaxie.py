@@ -67,21 +67,21 @@ class Galaxie():
         # Parameter(Fixstern): (position, rotSpeed, textur, planeten, anim, licht, radius, divisions)
         # Parameter(Mond): (anim, rotation, rotSpeed, parent, entf_rotPoint, movSpeed, radius, textur, divisions)
         # Fixstern
-        self.sonne = Fixstern([0, 0, -80], 0.2, self.sonnenTextur, None, True, self.light, 3, 64)
+        self.sonne = Fixstern([0, 0, -80], 0.2, self.sonnenTextur, None, True, self.light, 10, 64)
 
         # Planeten
-        self.merkur = Planet([-5, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0001, 1.25, self.merkurTextur, 32, None)
-        self.venus = Planet([-12.5, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.000125, 2.5, self.venusTextur, 32, None)
-        self.erde = Planet([-20, 0, -80], True, [90, 0, 0], 1.5, self.sonne.position, 0.0006, 1.5, self.erdenTextur, 32, None)
-        self.mars = Planet([-27.5, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0009, 2.3, self.marsTextur, 32, None)
-        self.jupiter = Planet([-35, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00035, 3, self.jupiterTextur, 32, None)
-        self.saturn = Planet([-42, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00056, 1.7, self.saturnTextur, 32, None)
-        self.uranus = Planet([-50, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0004, 5, self.uranusTextur, 32, None)
-        self.neptun = Planet([-60, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00087, 0.9, self.neptunTextur, 32, None)
-        self.pluto = Planet([-70, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00025, 1, self.plutoTextur, 32, None)
+        self.merkur = Planet([-17, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0001, 0.4, self.merkurTextur, 32, None)
+        self.venus = Planet([-20.5, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.000125, 1.21, self.venusTextur, 32, None)
+        self.erde = Planet([-29, 0, -80], True, [90, 0, 0], 1.5, self.sonne.position, 0.0006, 1.28, self.erdenTextur, 32, None)
+        self.mars = Planet([-36.5, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0009, 0.6, self.marsTextur, 32, None)
+        self.jupiter = Planet([-59, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00035, 14.3, self.jupiterTextur, 32, None)
+        self.saturn = Planet([-85, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00056, 12.05, self.saturnTextur, 32, None)
+        self.uranus = Planet([-98, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.0004, 5.11, self.uranusTextur, 32, None)
+        self.neptun = Planet([-115, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00087, 4.95, self.neptunTextur, 32, None)
+        self.pluto = Planet([-125, 0, -80], True, [90, 0, 0], 0.05, self.sonne.position, 0.00025, 0.1, self.plutoTextur, 32, None)
 
         # Monde
-        self.mond = Mond(True, [-90, 0, -80], 0, self.erde, 5, -0.0005, 1, self.mondTextur, 24)
+        self.mond = Mond(True, [-90, 0, -80], 0, self.erde, 5, -0.0005, 0.4, self.mondTextur, 24)
 
         self.erde.addMond(self.mond)
         self.sonne.addPlanet(self.erde)
