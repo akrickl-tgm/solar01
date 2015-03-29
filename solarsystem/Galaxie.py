@@ -189,11 +189,15 @@ class Galaxie():
         y = randint(-self.width/2, self.height/2)
         z = randint(-1000, 1000)
 
-        dir_x = randint(-10, 10)
-        dir_y = randint(-10, 10)
-        dir_z = randint(-10, 10)
+        dir_x = randint(1, 7)
+        dir_y = randint(1, 7)
+        dir_z = randint(1, 7)
 
-        speed = randint(-15, 15)
+        speed = randint(-10, 10)
+
+        if speed == 0:
+            speed = 1
+
         rot_speed = random()
         radius = randint(0, 5)
         divisions = randint(8, 32)
