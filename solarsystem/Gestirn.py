@@ -22,18 +22,28 @@ class Gestirn:
         pass
 
     def update(self):
+        # Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
         if self.anim:
+            # Nur dann, wenn die animation nicht pausiert wurde
             self.rotate([0, 0, self.rotSpeed])
 
     def draw(self, top, zoom):
         # Identity-Matrix neu laden
         glLoadIdentity()
 
+        # Je nachdem, welchen Sichtmodus der User gewaehlt hat, wird die Kamera
+        # an einer anderen Stelle gezeichnet bzw. zeigt auf einen anderen Punkt
         if top:
+            # Ansicht von oben
             gluLookAt(0, 100-zoom, 0, 0, 0, -80, 0, 1, 0)
         else:
+            # Seitenansicht
             gluLookAt(0, 0, 10-zoom, 0, 0, -80, 0, 1, 0)
 
+        # Den Himmelskoerper auf seine Position bewegen, bevor er rotiert
+        # wird. Aendert man die Reihenfolge der Transformationen, aendert
+        # sich auch das Ergebnis. Zuerst drehen, dann bewegen ->
+        # Bewegung evtl falsch, daher zuerst bewegen, dann drehen
         glTranslatef(self.position[0], self.position[1], self.position[2])
 
         # Objekt um die eigene Achse drehen
@@ -51,17 +61,28 @@ class Gestirn:
         gluSphere(quadratic, self.radius, self.divisions, self.divisions)
 
     def rotate(self, rotation):
-        self.rotation[0] += rotation[0]
-        self.rotation[1] += rotation[1]
-        self.rotation[2] += rotation[2]
+        # Nur wenn das Array drei werte hat, weitermachen
+        if len(rotation) == 3:
+            self.rotation[0] += rotation[0]
+            self.rotation[1] += rotation[1]
+            self.rotation[2] += rotation[2]
+
+        # TODO: Werte auf Sinnhaftigkeit pruefen
 
     def translate(self, pos):
-        self.position[0] += pos[0]
-        self.position[1] += pos[1]
-        self.position[2] += pos[2]
+        if len(pos) == 3:
+            # Nur wenn das Array drei werte hat, weitermachen
+            self.position[0] += pos[0]
+            self.position[1] += pos[1]
+            self.position[2] += pos[2]
+
+        # TODO: Werte auf Sinnhaftigkeit pruefen
 
     def setAnimation(self, anim):
-        self.anim = anim
+        if isinstance(anim, bool):
+            self.anim = anim
 
     def setAbstand(self, abstand):
-        self.entf_rotPoint = abstand
+        # Nur wenn der Abstand numerisch ist, weitermachen
+        if isinstance(abstand, int) or isinstance(abstand, float):
+            self.entf_rotPoint = abstand
