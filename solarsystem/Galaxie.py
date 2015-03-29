@@ -8,13 +8,15 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 from solarsystem.Planet import *
+from solarsystem.Asteroid import *
+from random import *
 
 ESCAPE = '\033'
 
 
 class Galaxie():
 
-    def __init__(self):
+    def __init__(self, width, height):
         # Da das Licht von open GL in Objektkoordinaten angezeigt (als Punkt) angezeigt wird,
         # muessen hier die Koordinaten uebergeben werden. Dazu nehme ich einfach den Nullpunkt
         # und verschiebe das Licht 80 Einheiten nach hinten. OpenGL behandelt die z-Achse negativ
@@ -28,6 +30,9 @@ class Galaxie():
         self.lights = True
         self.anim = True
         self.zoom = 0
+        self.asteroiden = []
+        self.width = width
+        self.height = height
 
         # Die ganzen Objektattribute hier leer initialisieren, einfach, weil das
         # die korrekte Python Sprachsyntax besagt.
@@ -96,6 +101,9 @@ class Galaxie():
         self.sonne.addPlanet(self.uranus)
         self.sonne.addPlanet(self.venus)
 
+        while len(self.asteroiden) < 100:
+            self.addAsteroid()
+
     def enableTextures(self):
         glEnable(GL_TEXTURE_2D)
 
@@ -139,6 +147,10 @@ class Galaxie():
         # Perspektive
         gluPerspective(50.0, float(Width) / float(Height), 0.1, 100000.0)  # Naehe
         glMatrixMode(GL_MODELVIEW)
+
+        self.width = Width
+        self.height = Height
+
     """
     szene zeichenn
     """
@@ -149,10 +161,44 @@ class Galaxie():
 
         self.sonne.draw(self.pos, self.zoom)
 
+        try:
+            for i in range(0, len(self.asteroiden)):
+                self.asteroiden[i].draw(self.pos, self.zoom)
+        except:
+            pass
+
         glutSwapBuffers()  # zeichnen
 
     def update(self):
         self.sonne.update()
+
+        for x in range(0, len(self.asteroiden)):
+            try:
+                if not self.asteroiden[x].valid:
+                    self.asteroiden.pop(x)
+                else:
+                    self.asteroiden[x].update()
+            except:
+                pass
+
+        while len(self.asteroiden) < 100:
+            self.addAsteroid()
+
+    def addAsteroid(self):
+        x = randint(-self.width/2, self.width/2)
+        y = randint(-self.width/2, self.height/2)
+        z = randint(-1000, 1000)
+
+        dir_x = randint(-10, 10)
+        dir_y = randint(-10, 10)
+        dir_z = randint(-10, 10)
+
+        speed = randint(-15, 15)
+        rot_speed = random()
+        radius = randint(0, 5)
+        divisions = randint(8, 32)
+
+        self.asteroiden.append(Asteroid([x,y,z], [dir_x, dir_y, dir_z], speed, rot_speed, self.anim, radius, self.asteroidTextur, divisions))
 
     def keyPressed(self, *args):
         if args[0] == b'p':

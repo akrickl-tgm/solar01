@@ -5,6 +5,8 @@ from solarsystem.splashscreen import *
 import tkinter
 from solarsystem.Galaxie import *
 
+width = 1000
+height = 600
 
 def main(sc):
         # splashscreen
@@ -19,7 +21,7 @@ def main(sc):
         glutInit(sys.argv)
 
         glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)   # Select type of Display mode
-        glutInitWindowSize(1000, 600)                               # get a 640 x 480 window
+        glutInitWindowSize(width, height)                               # get a 640 x 480 window
         glutInitWindowPosition(50, 50)                              # the window starts at the upper left corner of the screen
         glutCreateWindow(b'Solarsystem')                            # Titel
         glutDisplayFunc(sc.DrawGLScene)                           # Register the drawing function with glut
@@ -29,5 +31,5 @@ def main(sc):
         glutMainLoop()
 
 
-s = Galaxie()
+s = Galaxie(width, height)
 main(s)

@@ -14,6 +14,7 @@ class Asteroid(Gestirn):
         self.textur = textur  # Textur
         self.divisions = divisions  # Unterteilungen. Mehr = feinere, schoenere Kugel
         self.top = False
+        self.valid = True
 
     def update(self):
         if self.isInArea(2000, 2000, 2000):
@@ -22,3 +23,9 @@ class Asteroid(Gestirn):
             self.position[0] = self.position[0] + self.direction[0] * self.speed
             self.position[1] = self.position[1] + self.direction[1] * self.speed
             self.position[2] = self.position[2] + self.direction[2] * self.speed
+        else:
+            self.valid = False
+
+    def draw(self, top, zoom):
+        if self.isInArea(2000, 2000, 2000):
+            Gestirn.draw(self, top, zoom)
