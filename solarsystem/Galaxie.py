@@ -50,6 +50,9 @@ class Galaxie():
         self.asteroidTextur = None
 
     def loadTextures(self):
+        """
+        alle texturen laden die verwendet werden
+        """
         self.erdenTextur = Texturen.LoadTexture("../data/erde.jpg")
         self.jupiterTextur = Texturen.LoadTexture("../data/jupiter.jpg")
         self.marsTextur = Texturen.LoadTexture("../data/mars.jpg")
@@ -64,12 +67,21 @@ class Galaxie():
         self.asteroidTextur = Texturen.LoadTexture("../data/asteroid.jpg")
 
     def pauseAll(self):
+        """
+        methode um alle bewegungen zu pasuerien
+        """
         self.sonne.setAnimation(False)
 
     def playAll(self):
+        """
+        methode um alle bwewgungen zu aktivieren
+        """
         self.sonne.setAnimation(True)
 
     def loadPlanets(self):
+        """
+        alle planeten anlegen
+        """
         # Parameter(Planet): (position, anim, rotation, rotSpeed, rotPoint, movSpeed, radius, textur, divisions, monde)
         # Parameter(Fixstern): (position, rotSpeed, textur, planeten, anim, licht, radius, divisions)
         # Parameter(Mond): (anim, rotation, rotSpeed, parent, entf_rotPoint, movSpeed, radius, textur, divisions)
@@ -105,12 +117,21 @@ class Galaxie():
             self.addAsteroid()
 
     def enableTextures(self):
+        """
+        texturen aktivieren
+        """
         glEnable(GL_TEXTURE_2D)
 
     def disableTextures(self):
+        """
+        texturen deaktiviere - alles wird weiss angezeigt
+        """
         glDisable(GL_TEXTURE_2D)
 
     def init(self, Width, Height):
+        """
+        screen vorbereiten
+        """
         glClearColor(0.0, 0.0, 0.0, 0.0)    # Hintergrundfarbe
         glClearDepth(1.0)                   # Loeschen des Depth Buffers
         glDepthFunc(GL_LESS)                # The Type Of Depth Test To Do
@@ -136,6 +157,9 @@ class Galaxie():
     Wenn die groesse vom Fenster geaendert wird
     """
     def ReSizeGLScene(self, Width, Height):
+        """
+        bei veranederung der fenstergroesse, die galaxie anpassen
+        """
         # Wenn das Fenster zu klein ist, erhoehen auf 1
         if Height == 0:
             Height = 1
@@ -155,6 +179,10 @@ class Galaxie():
     szene zeichenn
     """
     def DrawGLScene(self):
+        """
+        alle komponenten zeichnen
+        :return:
+        """
         self.update()
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)  # Screen loeschen und depth buffer loeschen
@@ -170,6 +198,10 @@ class Galaxie():
         glutSwapBuffers()  # zeichnen
 
     def update(self):
+        """
+        alle komponenten aktualisierne
+        :return:
+        """
         self.sonne.update()
 
         for x in range(0, len(self.asteroiden)):
@@ -185,6 +217,10 @@ class Galaxie():
             self.addAsteroid()
 
     def addAsteroid(self):
+        """
+        asteroidden hinzufuegen
+        :return:
+        """
         x = randint(-self.width/2, self.width/2)
         y = randint(-self.width/2, self.height/2)
         z = randint(-1000, 1000)
@@ -205,6 +241,11 @@ class Galaxie():
         self.asteroiden.append(Asteroid([x,y,z], [dir_x, dir_y, dir_z], speed, rot_speed, self.anim, radius, self.asteroidTextur, divisions))
 
     def keyPressed(self, *args):
+        """
+        handling der tastaturbefehle
+        :param args: eingehender tastenbefehl
+        :return:
+        """
         if args[0] == b'p':
             if self.anim:
                 self.pauseAll()

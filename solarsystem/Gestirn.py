@@ -6,6 +6,20 @@ from solarsystem.Texturen import *
 
 class Gestirn:
     def __init__(self, position, anim, rotation, rotSpeed, rotPoint, entf_rotPoint, movSpeed, radius, textur, divisions):
+        """
+        kosnturktor des "interfaces" getsrin
+        :param position: posotion
+        :param anim: animation
+        :param rotation: roatation
+        :param rotSpeed: rotationsgeschw
+        :param rotPoint: rotationspunkt
+        :param entf_rotPoint: entferntung zum rotationspkt
+        :param movSpeed: bewegungsgeschw
+        :param radius: radius
+        :param textur: textur d gestrins
+        :param divisions: unterteulungen
+        :return:
+        """
         self.position = position  # Position im XYZ-Raum
         self.anim = anim  # Animationen an/aus
         self.rotation = rotation  # Rotation um die eigene Achse
@@ -18,16 +32,23 @@ class Gestirn:
         self.divisions = divisions  # Unterteilungen. Mehr = feinere, schoenere Kugel
         self.top = False
 
-    def init(self):
-        pass
 
     def update(self):
-        # Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
+        """
+        Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
+        :return:
+        """
         if self.anim:
             # Nur dann, wenn die animation nicht pausiert wurde
             self.rotate([0, 0, self.rotSpeed])
 
     def draw(self, top, zoom):
+        """
+        zeichent das gestrin
+        :param top:
+        :param zoom:
+        :return:
+        """
         # Identity-Matrix neu laden
         glLoadIdentity()
 
@@ -61,6 +82,11 @@ class Gestirn:
         gluSphere(quadratic, self.radius, self.divisions, self.divisions)
 
     def rotate(self, rotation):
+        """
+        dreht den himmelskoerper
+        :param rotation:
+        :return:
+        """
         # Nur wenn das Array drei werte hat, weitermachen
         if len(rotation) == 3:
             self.rotation[0] += rotation[0]
@@ -70,6 +96,11 @@ class Gestirn:
         # TODO: Werte auf Sinnhaftigkeit pruefen
 
     def translate(self, pos):
+        """
+        bewegt das gestirn weiter
+        :param pos: position um die es weiter bewegt wird
+        :return:
+        """
         if len(pos) == 3:
             # Nur wenn das Array drei werte hat, weitermachen
             self.position[0] += pos[0]
@@ -79,15 +110,32 @@ class Gestirn:
         # TODO: Werte auf Sinnhaftigkeit pruefen
 
     def setAnimation(self, anim):
+        """
+        setzt die animation
+        :param anim: true oder false ob es sich bewegen soll
+        :return:
+        """
         if isinstance(anim, bool):
             self.anim = anim
 
     def setAbstand(self, abstand):
+        """
+        abstand der gestrine setzen
+        :param abstand: abstand auf den es gesetzt wird
+        :return:
+        """
         # Nur wenn der Abstand numerisch ist, weitermachen
         if isinstance(abstand, int) or isinstance(abstand, float):
             self.entf_rotPoint = abstand
 
     def isInArea(self, width, height, depth):
+        """
+        ob ein planet im sichtfeld ist
+        :param width:
+        :param height:
+        :param depth:
+        :return:
+        """
         if self.position[0] + self.radius > width / -2 and self.position[0] + self.radius < width / 2:
             if self.position[1] + self.radius > height / -2 and self.position[1] + self.radius < height / 2:
                 if self.position[2] + self.radius > -depth and self.position[2] + self.radius < depth:

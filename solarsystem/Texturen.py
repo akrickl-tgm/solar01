@@ -10,6 +10,11 @@ class Texturen():
 
     @staticmethod
     def LoadTexture(pic):
+        """
+        ladet eine textur
+        :param pic: pfad des Bilds der als textur geladen werden soll
+        :return:
+        """
 
         image = open(pic)
 

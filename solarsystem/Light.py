@@ -5,11 +5,17 @@ from OpenGL.GL import *
 
 class Light:
     def __init__(self, position, color):
+        """
+        Konstruktor für das licht
+        """
         self.enabled = True
         self.color = color
         self.position = position
 
     def init(self):
+        """
+        initialisiert das licht
+        """
         # Lichter
         zeros = (0.15, 0.15, 0.15, 0.3)
         ones = (1.0, 1.0, 1.0, 0.3)
@@ -37,6 +43,10 @@ class Light:
         glShadeModel(GL_SMOOTH)
 
     def draw(self):
+        """
+        zeichnet das licht je nach dem ob schatten erwuensch sind
+        :return:
+        """
         if self.enabled:
             glShadeModel(GL_SMOOTH)
             glEnable(GL_CULL_FACE)
@@ -56,11 +66,16 @@ class Light:
             glDisable(GL_LIGHTING)
             glDisable(GL_LIGHT0)
 
-    def update(self):
-        pass
-
     def disable(self):
+        """
+        deaktiviert das licht
+        :return:
+        """
         self.enabled = False
 
     def enable(self):
+        """
+        aktiviert das licht
+        :return:
+        """
         self.enabled = True

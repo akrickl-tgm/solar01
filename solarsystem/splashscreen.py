@@ -5,11 +5,22 @@ import tkinter
 class Splash:
 
     def __init__(self, root, file, wait):
+        """
+        kosntrukotr initialisierng der variablen
+        :param root: wo das fenster aufgerufen wird
+        :param file: bild dass angezeigt werden soll
+        :param wait: wie lange der screen angezeigt werden soll
+        :return:
+        """
         self.__root = root
         self.__file = file
         self.__wait = wait + time.clock()
 
     def __enter__(self):
+        """
+        oeffent den splashscreen
+        :return:
+        """
         # Hide the root while it is built.
         self.__root.withdraw()
         # Create components of splash screen.
@@ -40,6 +51,10 @@ class Splash:
         self.__splash = splash
 
     def __exit__(self):
+        """
+        schliesst den splashscreen
+        :return:
+        """
         # Ensure that required time has passed.
         now = time.clock()
         if now < self.__wait:

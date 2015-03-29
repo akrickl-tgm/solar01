@@ -10,12 +10,13 @@ height = 600
 
 def main(sc):
         # splashscreen
-        # tkRoot = tkinter.Tk()
-        # s = Splash(tkRoot, '../data/splash.gif', 2.0)
-        # s.__enter__()
-        # s.__exit__()
+        tkRoot = tkinter.Tk()
+        s = Splash(tkRoot, '../data/splash.gif', 2.0)
+        s.__enter__()
+        s.__exit__()
 
-        # tkRoot.withdraw()
+        # basis fenster schließen
+        tkRoot.withdraw()
 
         #solarsystem
         glutInit(sys.argv)
