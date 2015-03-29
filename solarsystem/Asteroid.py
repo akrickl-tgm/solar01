@@ -36,18 +36,22 @@ class Asteroid(Gestirn):
         if self.isInArea(2000, 2000, 2000):
             Gestirn.update(self)
 
+            # Den Asteroiden in jedem Durchlauf verschieben
             self.position[0] = self.position[0] + self.direction[0] * self.speed
             self.position[1] = self.position[1] + self.direction[1] * self.speed
             self.position[2] = self.position[2] + self.direction[2] * self.speed
         else:
+            # Wenn er ausserhalb der definierten Grenzen ist, wird
+            # er ungueltig und kann von einer anderen Stelle aus geloescht werden.
             self.valid = False
 
     def draw(self, top, zoom):
         """
-        zeichnet einen asteroien
+        zeichnet einen Asteroiden
         :param top:
         :param zoom:
         :return:
         """
         if self.isInArea(2000, 2000, 2000):
+            # Nur zeichnen, wenn der Asteroid in den bestimmten Grenzen ist.
             Gestirn.draw(self, top, zoom)
