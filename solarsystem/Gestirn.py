@@ -86,3 +86,11 @@ class Gestirn:
         # Nur wenn der Abstand numerisch ist, weitermachen
         if isinstance(abstand, int) or isinstance(abstand, float):
             self.entf_rotPoint = abstand
+
+    def isInArea(self, width, height, depth):
+        if self.position[0] + self.radius > width / -2 and self.position[0] + self.radius < width / 2:
+            if self.position[1] + self.radius > height / -2 and self.position[1] + self.radius < height / 2:
+                if self.position[2] + self.radius > -depth and self.position[2] + self.radius < depth:
+                    return True
+        else:
+            return False

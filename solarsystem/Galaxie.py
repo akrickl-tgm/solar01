@@ -42,6 +42,7 @@ class Galaxie():
         self.sonnenTextur = None
         self.uranusTextur = None
         self.venusTextur = None
+        self.asteroidTextur = None
 
     def loadTextures(self):
         self.erdenTextur = Texturen.LoadTexture("../data/erde.jpg")
@@ -55,6 +56,7 @@ class Galaxie():
         self.sonnenTextur = Texturen.LoadTexture("../data/sonne.jpg")
         self.uranusTextur = Texturen.LoadTexture("../data/uranus.jpg")
         self.venusTextur = Texturen.LoadTexture("../data/venus.jpg")
+        self.asteroidTextur = Texturen.LoadTexture("../data/asteroid.jpg")
 
     def pauseAll(self):
         self.sonne.setAnimation(False)
