@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7a213b-a636-4d37-9878-704ed8999682" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solarsystem/Asteroid.py" afterPath="$PROJECT_DIR$/solarsystem/Asteroid.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/solar01.iml" afterPath="$PROJECT_DIR$/.idea/solar01.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4e7a213b-a636-4d37-9878-704ed8999682" name="Default" comment="" />
     <ignored path="solar01.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,12 +31,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
+      <file leaf-file-name="Gestirn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="570">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2205">
+              <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Python/#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py" pinned="false" current-in-tab="true">
+        <entry file="uml://Python/#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>Python</ID>
+              <OriginalElement>#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py</OriginalElement>
+              <nodes>
+                <node x="1206.228310502283" y="1035.9748858447488">solarsystem.Asteroid.Asteroid</node>
+                <node x="1493.9748858447488" y="572.0114155251142">solarsystem.Mond.Mond</node>
+                <node x="678.933789954338" y="168.29908675799095">solarsystem.splashscreen.Splash</node>
+                <node x="-448.74657534246535" y="458.0045662100456">solarsystem.Light.Light</node>
+                <node x="777.9543378995431" y="288.7990867579909">solarsystem.Planet.Planet</node>
+                <node x="282.7625570776256" y="668.3059360730593">solarsystem.Fixstern.Fixstern</node>
+                <node x="221.5" y="0.0">_collections_abc.Hashable</node>
+                <node x="0.0" y="123.0">object</node>
+                <node x="-289.4703196347032" y="646.4611872146119">solarsystem.Galaxie.Galaxie</node>
+                <node x="-119.61872146118685" y="-46.10958904109566">solarsystem.Texturen.Texturen</node>
+                <node x="1079.0844748858444" y="717.0730593607307">solarsystem.Gestirn.Gestirn</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="solarsystem.Gestirn.Gestirn" target="object">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.Mond.Mond" target="solarsystem.Gestirn.Gestirn">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.Light.Light" target="object">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.Galaxie.Galaxie" target="object">
+                  <point x="0.0" y="-157.5" />
+                  <point x="0.0" y="234.5" />
+                </edge>
+                <edge source="solarsystem.Asteroid.Asteroid" target="solarsystem.Gestirn.Gestirn">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.Planet.Planet" target="solarsystem.Gestirn.Gestirn">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="object" target="_collections_abc.Hashable">
+                  <point x="0.0" y="-234.5" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+                <edge source="solarsystem.Fixstern.Fixstern" target="solarsystem.Gestirn.Gestirn">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.splashscreen.Splash" target="object">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="solarsystem.Texturen.Texturen" target="object">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.4483111566018424" x="1058.5205479452054" y="338.5" />
+              <SelectedNodes>
+                <node>solarsystem.Texturen.Texturen</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Methods</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -136,7 +205,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/solarsystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/umlV2.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -551,6 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="1462">
           <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,6 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1326">
           <caret line="61" column="56" selection-start-line="60" selection-start-column="8" selection-end-line="61" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,6 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="2737">
           <caret line="130" column="56" selection-start-line="129" selection-start-column="7" selection-end-line="130" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -588,6 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="680">
           <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,25 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://Python/#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py</OriginalElement>
-          <nodes>
-            <node x="" y="">_collections_abc.Hashable</node>
-            <node x="" y="">object</node>
-            <node x="" y="">solarsystem.Galaxie.Galaxie</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="104.0" y="94.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solarsystem/Fixstern.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.9821959" vertical-offset="0" max-vertical-offset="2100">
@@ -875,13 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7854077" vertical-offset="3606" max-vertical-offset="4305">
           <caret line="286" column="27" selection-start-line="286" selection-start-column="27" selection-end-line="286" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8712446" vertical-offset="1506" max-vertical-offset="2205">
-          <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -890,6 +937,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8712446" vertical-offset="591" max-vertical-offset="1290">
           <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -897,6 +945,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8712446" vertical-offset="456" max-vertical-offset="1155">
           <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -904,6 +953,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8712446" vertical-offset="1686" max-vertical-offset="2385">
           <caret line="155" column="44" selection-start-line="155" selection-start-column="44" selection-end-line="155" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,6 +969,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34334764" vertical-offset="0" max-vertical-offset="699">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -980,9 +1031,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="570">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.61290324" vertical-offset="0" max-vertical-offset="570">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2205">
+          <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py</OriginalElement>
+          <nodes>
+            <node x="1206.228310502283" y="1035.9748858447488">solarsystem.Asteroid.Asteroid</node>
+            <node x="1493.9748858447488" y="572.0114155251142">solarsystem.Mond.Mond</node>
+            <node x="678.933789954338" y="168.29908675799095">solarsystem.splashscreen.Splash</node>
+            <node x="-448.74657534246535" y="458.0045662100456">solarsystem.Light.Light</node>
+            <node x="777.9543378995431" y="288.7990867579909">solarsystem.Planet.Planet</node>
+            <node x="282.7625570776256" y="668.3059360730593">solarsystem.Fixstern.Fixstern</node>
+            <node x="221.5" y="0.0">_collections_abc.Hashable</node>
+            <node x="0.0" y="123.0">object</node>
+            <node x="-289.4703196347032" y="646.4611872146119">solarsystem.Galaxie.Galaxie</node>
+            <node x="-119.61872146118685" y="-46.10958904109566">solarsystem.Texturen.Texturen</node>
+            <node x="1079.0844748858444" y="717.0730593607307">solarsystem.Gestirn.Gestirn</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="solarsystem.Gestirn.Gestirn" target="object">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.Mond.Mond" target="solarsystem.Gestirn.Gestirn">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.Light.Light" target="object">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.Galaxie.Galaxie" target="object">
+              <point x="0.0" y="-157.5" />
+              <point x="0.0" y="234.5" />
+            </edge>
+            <edge source="solarsystem.Asteroid.Asteroid" target="solarsystem.Gestirn.Gestirn">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.Planet.Planet" target="solarsystem.Gestirn.Gestirn">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="object" target="_collections_abc.Hashable">
+              <point x="0.0" y="-234.5" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="solarsystem.Fixstern.Fixstern" target="solarsystem.Gestirn.Gestirn">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.splashscreen.Splash" target="object">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="solarsystem.Texturen.Texturen" target="object">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4483111566018424" x="1058.5205479452054" y="338.5" />
+          <SelectedNodes>
+            <node>solarsystem.Texturen.Texturen</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
