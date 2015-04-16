@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-KLASSE "Light"
+KLASSE "Mond"
 =======================================
 
 Contents:
@@ -15,8 +15,8 @@ Contents:
 DOKUMENTATION
 --------------
 
-.. py:currentmodule:: Light
-.. autoclass:: Light
+.. py:currentmodule:: solarsystem
+.. autoclass:: Mond
 	:members:
 
 

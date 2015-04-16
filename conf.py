@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# solar documentation build configuration file, created by
-# sphinx-quickstart on Sun Mar 29 22:10:04 2015.
+# soalr documentation build configuration file, created by
+# sphinx-quickstart on Sun Mar 29 22:54:37 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -29,7 +29,12 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+	'sphinx.ext.doctest',
+	'sphinx.ext.coverage',
+	'sphinx.ext.viewcode'
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -44,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'solar'
+project = 'soalr'
 copyright = '2015, Herczeg Krickl'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -177,7 +182,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'solardoc'
+htmlhelp_basename = 'soalrdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -197,7 +202,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'solar.tex', 'solar Documentation',
+  ('index', 'soalr.tex', 'soalr Documentation',
    'Herczeg Krickl', 'manual'),
 ]
 
@@ -227,7 +232,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'solar', 'solar Documentation',
+    ('index', 'soalr', 'soalr Documentation',
      ['Herczeg Krickl'], 1)
 ]
 
@@ -241,8 +246,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'solar', 'solar Documentation',
-   'Herczeg Krickl', 'solar', 'One line description of project.',
+  ('index', 'soalr', 'soalr Documentation',
+   'Herczeg Krickl', 'soalr', 'One line description of project.',
    'Miscellaneous'),
 ]
 

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-KLASSE "Splashscreen"
+KLASSE "Gestirn"
 =======================================
 
 Contents:
@@ -15,8 +15,8 @@ Contents:
 DOKUMENTATION
 --------------
 
-.. py:currentmodule:: Splash
-.. autoclass:: Splash
+.. py:currentmodule:: solarsystem
+.. autoclass:: Gestirn
 	:members:
 
 

@@ -15,7 +15,7 @@ Contents:
 DOKUMENTATION
 --------------
 
-.. py:currentmodule:: Planet
+.. py:currentmodule:: solarsystem
 .. autoclass:: Planet
 	:members:
 
