@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_gestirn_1_1_gestirn" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Gestirn::Gestirn</compoundname>
+    <derivedcompoundref refid="classsolarsystem_1_1_asteroid_1_1_asteroid" prot="public" virt="non-virtual">solarsystem.Asteroid.Asteroid</derivedcompoundref>
+    <derivedcompoundref refid="classsolarsystem_1_1_fixstern_1_1_fixstern" prot="public" virt="non-virtual">solarsystem.Fixstern.Fixstern</derivedcompoundref>
+    <derivedcompoundref refid="classsolarsystem_1_1_mond_1_1_mond" prot="public" virt="non-virtual">solarsystem.Mond.Mond</derivedcompoundref>
+    <derivedcompoundref refid="classsolarsystem_1_1_planet_1_1_planet" prot="public" virt="non-virtual">solarsystem.Planet.Planet</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1ae7d8ec948413d7e2d525f880213f5389" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="23" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a696fdc7b46865824a5745f7ba8f97907" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="24" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1af21dc324a3c7b0919d7059136ad6a499" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="25" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1aef87612e41a3f2ae920e572e910683f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::rotSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="26" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a374591bbeda83179c747e9a0adbe53db" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::rotPoint</definition>
+        <argsstring></argsstring>
+        <name>rotPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="27" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a3a0a58e8a756c1e52a6d0da8793d7cd9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::entf_rotPoint</definition>
+        <argsstring></argsstring>
+        <name>entf_rotPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="28" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1afe8e46ebe28ba4aec2dac1195fd35d03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::movSpeed</definition>
+        <argsstring></argsstring>
+        <name>movSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="29" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1aad6ab25055bb5029a379311d28f7ee86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="30" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a2cf6e5976b97db2341281b3fcb692176" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::textur</definition>
+        <argsstring></argsstring>
+        <name>textur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="31" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a613f7675be319bc70bd14a0af48cc70d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::divisions</definition>
+        <argsstring></argsstring>
+        <name>divisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="32" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Gestirn.Gestirn::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="33" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1ac143790186d9aaec3771d4ecad388171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.__init__</definition>
+        <argsstring>(self, position, anim, rotation, rotSpeed, rotPoint, entf_rotPoint, movSpeed, radius, textur, divisions)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1ae7d8ec948413d7e2d525f880213f5389" kindref="member">position</ref></type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a696fdc7b46865824a5745f7ba8f97907" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af21dc324a3c7b0919d7059136ad6a499" kindref="member">rotation</ref></type>
+          <defname>rotation</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1aef87612e41a3f2ae920e572e910683f1" kindref="member">rotSpeed</ref></type>
+          <defname>rotSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a374591bbeda83179c747e9a0adbe53db" kindref="member">rotPoint</ref></type>
+          <defname>rotPoint</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a3a0a58e8a756c1e52a6d0da8793d7cd9" kindref="member">entf_rotPoint</ref></type>
+          <defname>entf_rotPoint</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1afe8e46ebe28ba4aec2dac1195fd35d03" kindref="member">movSpeed</ref></type>
+          <defname>movSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1aad6ab25055bb5029a379311d28f7ee86" kindref="member">radius</ref></type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a2cf6e5976b97db2341281b3fcb692176" kindref="member">textur</ref></type>
+          <defname>textur</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a613f7675be319bc70bd14a0af48cc70d" kindref="member">divisions</ref></type>
+          <defname>divisions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>kosnturktor des &quot;interfaces&quot; getsrin
+:param position: posotion
+:param anim: animation
+:param rotation: roatation
+:param rotSpeed: rotationsgeschw
+:param rotPoint: rotationspunkt
+:param entf_rotPoint: entferntung zum rotationspkt
+:param movSpeed: bewegungsgeschw
+:param radius: radius
+:param textur: textur d gestrins
+:param divisions: unterteulungen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="8" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="8" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1aba134c35033793ca12f68b685c20ab28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="36" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a35e93c07b6fb86ac973ca64b414b346b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.draw</definition>
+        <argsstring>(self, top, zoom)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" kindref="member">top</ref></type>
+          <defname>top</defname>
+        </param>
+        <param>
+          <type>zoom</type>
+          <defname>zoom</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>zeichent das gestrin
+:param top:
+:param zoom:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="45" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="45" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a6252a7fb7ef936a897d5c3f2c8dfeacd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.rotate</definition>
+        <argsstring>(self, rotation)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af21dc324a3c7b0919d7059136ad6a499" kindref="member">rotation</ref></type>
+          <defname>rotation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>dreht den himmelskoerper
+:param rotation:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="84" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="84" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a84331729a97e35ffdf5a1e26385163e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.translate</definition>
+        <argsstring>(self, pos)</argsstring>
+        <name>translate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>bewegt das gestirn weiter
+:param pos: position um die es weiter bewegt wird
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="98" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="98" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a44bf0aeb27fd37b18768765a8adfb6b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.setAnimation</definition>
+        <argsstring>(self, anim)</argsstring>
+        <name>setAnimation</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a696fdc7b46865824a5745f7ba8f97907" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>setzt die animation
+:param anim: true oder false ob es sich bewegen soll
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="112" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a69694d5dba732b13ef49dd1405cd63ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.setAbstand</definition>
+        <argsstring>(self, abstand)</argsstring>
+        <name>setAbstand</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>abstand</type>
+          <defname>abstand</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>abstand der gestrine setzen
+:param abstand: abstand auf den es gesetzt wird
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="121" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="121" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_gestirn_1_1_gestirn_1a0a5d5c32e405bf22443a3ceb8cc949ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Gestirn.Gestirn.isInArea</definition>
+        <argsstring>(self, width, height, depth)</argsstring>
+        <name>isInArea</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>ob ein planet im sichtfeld ist
+:param width:
+:param height:
+:param depth:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="131" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="131" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>solarsystem.Asteroid.Asteroid</label>
+        <link refid="classsolarsystem_1_1_asteroid_1_1_asteroid"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>solarsystem.Mond.Mond</label>
+        <link refid="classsolarsystem_1_1_mond_1_1_mond"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+      <node id="14">
+        <label>solarsystem.Planet.Planet</label>
+        <link refid="classsolarsystem_1_1_planet_1_1_planet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>solarsystem.Fixstern.Fixstern</label>
+        <link refid="classsolarsystem_1_1_fixstern_1_1_fixstern"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" line="7" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Gestirn.py" bodystart="7" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1ac143790186d9aaec3771d4ecad388171" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a696fdc7b46865824a5745f7ba8f97907" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>anim</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a613f7675be319bc70bd14a0af48cc70d" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>divisions</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a35e93c07b6fb86ac973ca64b414b346b" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>draw</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a3a0a58e8a756c1e52a6d0da8793d7cd9" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>entf_rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a0a5d5c32e405bf22443a3ceb8cc949ba" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>isInArea</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1afe8e46ebe28ba4aec2dac1195fd35d03" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>movSpeed</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1ae7d8ec948413d7e2d525f880213f5389" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>position</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1aad6ab25055bb5029a379311d28f7ee86" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>radius</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a6252a7fb7ef936a897d5c3f2c8dfeacd" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>rotate</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af21dc324a3c7b0919d7059136ad6a499" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>rotation</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a374591bbeda83179c747e9a0adbe53db" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1aef87612e41a3f2ae920e572e910683f1" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>rotSpeed</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a69694d5dba732b13ef49dd1405cd63ab" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>setAbstand</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a44bf0aeb27fd37b18768765a8adfb6b7" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>setAnimation</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a2cf6e5976b97db2341281b3fcb692176" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>textur</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>top</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a84331729a97e35ffdf5a1e26385163e2" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>translate</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1aba134c35033793ca12f68b685c20ab28" prot="public" virt="non-virtual"><scope>solarsystem::Gestirn::Gestirn</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1splashscreen_1_1_splash" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::splashscreen::Splash</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1a1cf75acfa33bd9a47e8961e1e5d11c03" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__root</definition>
+        <argsstring></argsstring>
+        <name>__root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="15" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1a479d41f4c29c93fd810d7c6d35098826" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__file</definition>
+        <argsstring></argsstring>
+        <name>__file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="16" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1ae1cdc3bbf33dce8509c3fa825e5cd78f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__wait</definition>
+        <argsstring></argsstring>
+        <name>__wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="17" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1a3e0b22292892525a314f52e755bdc901" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__window</definition>
+        <argsstring></argsstring>
+        <name>__window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="49" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1a00d1c739ca61a01055288ed9227ca002" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__canvas</definition>
+        <argsstring></argsstring>
+        <name>__canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="50" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1splashscreen_1_1_splash_1ab6ba14b8158b3adc120cba3171d6112e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.splashscreen.Splash::__splash</definition>
+        <argsstring></argsstring>
+        <name>__splash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="51" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1splashscreen_1_1_splash_1acf8dcc55370bdda7cc51e2f3bac5b212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.splashscreen.Splash.__init__</definition>
+        <argsstring>(self, root, file, wait)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>root</type>
+          <defname>root</defname>
+        </param>
+        <param>
+          <type>file</type>
+          <defname>file</defname>
+        </param>
+        <param>
+          <type>wait</type>
+          <defname>wait</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>kosntrukotr initialisierng der variablen
+:param root: wo das fenster aufgerufen wird
+:param file: bild dass angezeigt werden soll
+:param wait: wie lange der screen angezeigt werden soll
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="7" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="7" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1splashscreen_1_1_splash_1ab059747ea43838c00464bd6b6802f48a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.splashscreen.Splash.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>oeffent den splashscreen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="19" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="19" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1splashscreen_1_1_splash_1adc7dbc6542a5935c7dfb5b3178d37ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.splashscreen.Splash.__exit__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>schliesst den splashscreen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="53" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="53" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="5" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" bodystart="5" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1a00d1c739ca61a01055288ed9227ca002" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__canvas</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1ab059747ea43838c00464bd6b6802f48a" prot="public" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__enter__</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1adc7dbc6542a5935c7dfb5b3178d37ced" prot="public" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__exit__</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1a479d41f4c29c93fd810d7c6d35098826" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__file</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1acf8dcc55370bdda7cc51e2f3bac5b212" prot="public" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1a1cf75acfa33bd9a47e8961e1e5d11c03" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__root</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1ab6ba14b8158b3adc120cba3171d6112e" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__splash</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1ae1cdc3bbf33dce8509c3fa825e5cd78f" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__wait</name></member>
+      <member refid="classsolarsystem_1_1splashscreen_1_1_splash_1a3e0b22292892525a314f52e755bdc901" prot="private" virt="non-virtual"><scope>solarsystem::splashscreen::Splash</scope><name>__window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

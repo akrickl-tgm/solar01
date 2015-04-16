@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1start" kind="namespace" language="Python">
+    <compoundname>solarsystem::start</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1start_1ac57d67fc851a04241eae5cd75464aebf" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::start.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Astrid Krickl, Daniel Herczeg&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesolarsystem_1_1start_1a2fc3350164639fad7348314a5a41a3a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int solarsystem::start.width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="8" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesolarsystem_1_1start_1a136c69cbd334d8b24d9df0c44a765787" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int solarsystem::start.height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>= 600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="9" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesolarsystem_1_1start_1a60d08fec98944a20831a1bb78717c04a" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple solarsystem::start.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <initializer>= <ref refid="classsolarsystem_1_1_galaxie_1_1_galaxie" kindref="compound">Galaxie</ref>(<ref refid="namespacesolarsystem_1_1start_1a2fc3350164639fad7348314a5a41a3a2" kindref="member">width</ref>, <ref refid="namespacesolarsystem_1_1start_1a136c69cbd334d8b24d9df0c44a765787" kindref="member">height</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="35" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesolarsystem_1_1start_1ab13c02270909db6517c47d2b5728f6cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.start.main</definition>
+        <argsstring>(sc)</argsstring>
+        <name>main</name>
+        <param>
+          <type>sc</type>
+          <defname>sc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="11" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" bodystart="11" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/start.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

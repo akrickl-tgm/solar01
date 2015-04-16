@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="splashscreen_8py" kind="file" language="Python">
+    <compoundname>splashscreen.py</compoundname>
+    <innerclass refid="classsolarsystem_1_1splashscreen_1_1_splash" prot="public">solarsystem::splashscreen::Splash</innerclass>
+    <innernamespace refid="namespacesolarsystem_1_1splashscreen">solarsystem::splashscreen</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesolarsystem_1_1splashscreen" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tkinter</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsolarsystem_1_1splashscreen_1_1_splash" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsolarsystem_1_1splashscreen_1_1_splash" kindref="compound">Splash</ref>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1acf8dcc55370bdda7cc51e2f3bac5b212" kindref="member">__init__</ref>(self,<sp/>root,<sp/>file,<sp/>wait):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kosntrukotr<sp/>initialisierng<sp/>der<sp/>variablen</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>root:<sp/>wo<sp/>das<sp/>fenster<sp/>aufgerufen<sp/>wird</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>file:<sp/>bild<sp/>dass<sp/>angezeigt<sp/>werden<sp/>soll</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>wait:<sp/>wie<sp/>lange<sp/>der<sp/>screen<sp/>angezeigt<sp/>werden<sp/>soll</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:return:</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a1cf75acfa33bd9a47e8961e1e5d11c03" kindref="member">__root</ref><sp/>=<sp/>root</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a479d41f4c29c93fd810d7c6d35098826" kindref="member">__file</ref><sp/>=<sp/>file</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ae1cdc3bbf33dce8509c3fa825e5cd78f" kindref="member">__wait</ref><sp/>=<sp/>wait<sp/>+<sp/>time.clock()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ab059747ea43838c00464bd6b6802f48a" kindref="member">__enter__</ref>(self):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oeffent<sp/>den<sp/>splashscreen</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:return:</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Hide<sp/>the<sp/>root<sp/>while<sp/>it<sp/>is<sp/>built.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__root.withdraw()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Create<sp/>components<sp/>of<sp/>splash<sp/>screen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window<sp/>=<sp/>tkinter.Toplevel(self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a1cf75acfa33bd9a47e8961e1e5d11c03" kindref="member">__root</ref>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas<sp/>=<sp/>tkinter.Canvas(window)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>splash<sp/>=<sp/>tkinter.PhotoImage(master=window,<sp/>file=self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a479d41f4c29c93fd810d7c6d35098826" kindref="member">__file</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>the<sp/>screen&apos;s<sp/>width<sp/>and<sp/>height.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrW<sp/>=<sp/>window.winfo_screenwidth()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrH<sp/>=<sp/>window.winfo_screenheight()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>the<sp/>images&apos;s<sp/>width<sp/>and<sp/>height.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imgW<sp/>=<sp/>splash.width()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imgH<sp/>=<sp/>splash.height()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Compute<sp/>positioning<sp/>for<sp/>splash<sp/>screen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Xpos<sp/>=<sp/>(scrW<sp/>-<sp/>imgW)<sp/>//<sp/>2</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ypos<sp/>=<sp/>(scrH<sp/>-<sp/>imgH)<sp/>//<sp/>2</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Configure<sp/>the<sp/>window<sp/>showing<sp/>the<sp/>logo.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.overrideredirect(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.geometry(</highlight><highlight class="stringliteral">&apos;+{}+{}&apos;</highlight><highlight class="normal">.format(Xpos,<sp/>Ypos))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Setup<sp/>canvas<sp/>on<sp/>which<sp/>image<sp/>is<sp/>drawn.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.configure(width=imgW,<sp/>height=imgH,<sp/>highlightthickness=0)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.grid()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Show<sp/>the<sp/>splash<sp/>screen<sp/>on<sp/>the<sp/>monitor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.create_image(imgW<sp/>//<sp/>2,<sp/>imgH<sp/>//<sp/>2,<sp/>image=splash)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.update()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Save<sp/>the<sp/>variables<sp/>for<sp/>later<sp/>cleanup.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a3e0b22292892525a314f52e755bdc901" kindref="member">__window</ref><sp/>=<sp/>window</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1a00d1c739ca61a01055288ed9227ca002" kindref="member">__canvas</ref><sp/>=<sp/>canvas</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ab6ba14b8158b3adc120cba3171d6112e" kindref="member">__splash</ref><sp/>=<sp/>splash</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1adc7dbc6542a5935c7dfb5b3178d37ced" kindref="member">__exit__</ref>(self):</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>schliesst<sp/>den<sp/>splashscreen</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:return:</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Ensure<sp/>that<sp/>required<sp/>time<sp/>has<sp/>passed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>now<sp/>=<sp/>time.clock()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>now<sp/>&lt;<sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ae1cdc3bbf33dce8509c3fa825e5cd78f" kindref="member">__wait</ref>:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time.sleep(self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ae1cdc3bbf33dce8509c3fa825e5cd78f" kindref="member">__wait</ref><sp/>-<sp/>now)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Free<sp/>used<sp/>resources<sp/>in<sp/>reverse<sp/>order.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>self.<ref refid="classsolarsystem_1_1splashscreen_1_1_splash_1ab6ba14b8158b3adc120cba3171d6112e" kindref="member">__splash</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__canvas.destroy()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__window.destroy()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Give<sp/>control<sp/>back<sp/>to<sp/>the<sp/>root<sp/>program.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__root.update_idletasks()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__root.deiconify()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py"/>
+  </compounddef>
+</doxygen>

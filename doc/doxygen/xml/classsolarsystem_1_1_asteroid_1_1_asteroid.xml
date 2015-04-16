@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_asteroid_1_1_asteroid" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Asteroid::Asteroid</compoundname>
+    <basecompoundref refid="classsolarsystem_1_1_gestirn_1_1_gestirn" prot="public" virt="non-virtual">solarsystem.Gestirn.Gestirn</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1adec9c09bbce86f82b1a962055807874b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="19" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1aebd3e4cbbe6c7ca71fafa5dc9b0f812d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="20" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a3dedda723797923a27e01aa4c9e5ad43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="21" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a1e8b7a9969f8fc7ce8f27547b664d621" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="22" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1abc8aac5320ff6cbd083f1c0c814e425b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::rotSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="23" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a657f0e90b4bca0a8b64e904b589e31af" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="24" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1afe6082d4c4484c017539dc713f48587a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="25" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a2a265aff5cb3f02bbcc07f8ad45cd17f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::textur</definition>
+        <argsstring></argsstring>
+        <name>textur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="26" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a8e363e6d9c5899ac3e2bf1943e9148aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::divisions</definition>
+        <argsstring></argsstring>
+        <name>divisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="27" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a23bd2c3c13396822c89a8d9b1874661f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="28" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1afddce0d76546e6c457df8df54a9f83fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Asteroid.Asteroid::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="29" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a0cdc464157b691c8e938b8801598dfe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Asteroid.Asteroid.__init__</definition>
+        <argsstring>(self, position, dir, speed, rotSpeed, anim, radius, textur, divisions)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1adec9c09bbce86f82b1a962055807874b" kindref="member">position</ref></type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type>dir</type>
+          <defname>dir</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a657f0e90b4bca0a8b64e904b589e31af" kindref="member">speed</ref></type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1abc8aac5320ff6cbd083f1c0c814e425b" kindref="member">rotSpeed</ref></type>
+          <defname>rotSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a3dedda723797923a27e01aa4c9e5ad43" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1afe6082d4c4484c017539dc713f48587a" kindref="member">radius</ref></type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a2a265aff5cb3f02bbcc07f8ad45cd17f" kindref="member">textur</ref></type>
+          <defname>textur</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a8e363e6d9c5899ac3e2bf1943e9148aa" kindref="member">divisions</ref></type>
+          <defname>divisions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Konstruktor fuer einen Asteroid
+:param position: pos des asteroids
+:param dir: richtiung
+:param speed: geschwindigkeit
+:param rotSpeed: rotationsgeschwindigkeit
+:param anim: animation
+:param radius: radius
+:param textur: textur
+:param divisions:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="6" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="6" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a6013402f8d263120c7b4d7ae299dd3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Asteroid.Asteroid.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>update methode des asteroids
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="31" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="31" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_asteroid_1_1_asteroid_1a3de7b5f8fd39f320bf1f3996e7b105df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Asteroid.Asteroid.draw</definition>
+        <argsstring>(self, top, zoom)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a23bd2c3c13396822c89a8d9b1874661f" kindref="member">top</ref></type>
+          <defname>top</defname>
+        </param>
+        <param>
+          <type>zoom</type>
+          <defname>zoom</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>zeichnet einen Asteroiden
+:param top:
+:param zoom:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="48" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="48" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>solarsystem.Asteroid.Asteroid</label>
+        <link refid="classsolarsystem_1_1_asteroid_1_1_asteroid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>solarsystem.Asteroid.Asteroid</label>
+        <link refid="classsolarsystem_1_1_asteroid_1_1_asteroid"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" line="5" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Asteroid.py" bodystart="5" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a0cdc464157b691c8e938b8801598dfe8" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1ac143790186d9aaec3771d4ecad388171" prot="public" virt="non-virtual" ambiguityscope="solarsystem::Gestirn::Gestirn."><scope>solarsystem::Asteroid::Asteroid</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a3dedda723797923a27e01aa4c9e5ad43" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>anim</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1aebd3e4cbbe6c7ca71fafa5dc9b0f812d" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>direction</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a8e363e6d9c5899ac3e2bf1943e9148aa" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>divisions</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a3de7b5f8fd39f320bf1f3996e7b105df" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>draw</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a3a0a58e8a756c1e52a6d0da8793d7cd9" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>entf_rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a0a5d5c32e405bf22443a3ceb8cc949ba" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>isInArea</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1afe8e46ebe28ba4aec2dac1195fd35d03" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>movSpeed</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1adec9c09bbce86f82b1a962055807874b" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>position</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1afe6082d4c4484c017539dc713f48587a" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>radius</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a6252a7fb7ef936a897d5c3f2c8dfeacd" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>rotate</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a1e8b7a9969f8fc7ce8f27547b664d621" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>rotation</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a374591bbeda83179c747e9a0adbe53db" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1abc8aac5320ff6cbd083f1c0c814e425b" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>rotSpeed</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a69694d5dba732b13ef49dd1405cd63ab" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>setAbstand</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a44bf0aeb27fd37b18768765a8adfb6b7" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>setAnimation</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a657f0e90b4bca0a8b64e904b589e31af" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>speed</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a2a265aff5cb3f02bbcc07f8ad45cd17f" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>textur</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a23bd2c3c13396822c89a8d9b1874661f" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>top</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a84331729a97e35ffdf5a1e26385163e2" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>translate</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1a6013402f8d263120c7b4d7ae299dd3cb" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>update</name></member>
+      <member refid="classsolarsystem_1_1_asteroid_1_1_asteroid_1afddce0d76546e6c457df8df54a9f83fd" prot="public" virt="non-virtual"><scope>solarsystem::Asteroid::Asteroid</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

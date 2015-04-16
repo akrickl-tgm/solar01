@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_planet_1_1_planet" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Planet::Planet</compoundname>
+    <basecompoundref refid="classsolarsystem_1_1_gestirn_1_1_gestirn" prot="public" virt="non-virtual">solarsystem.Gestirn.Gestirn</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1af8694f16f889c818e47599802a488d6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="23" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1abe2ea2453323b58011388bea1e98a1ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="24" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1aa1901d151ca49cbdc54cc921ddf1395c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="25" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1a2fbb0761d04d9f629ca5784a6d9d4069" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::rotSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="26" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1a3627c073f914ad6f8577858a0a72575a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::rotPoint</definition>
+        <argsstring></argsstring>
+        <name>rotPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="27" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1aff4f9d7dd6cd9551c195b488f7c82516" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::entf_rotPoint</definition>
+        <argsstring></argsstring>
+        <name>entf_rotPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="28" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1ac17fad09591400c6991da448e7a71a17" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::movSpeed</definition>
+        <argsstring></argsstring>
+        <name>movSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="29" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1adb5d6eb58316a4ea8e19130da279d11c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="30" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1a2c2f55fea699a24455e7e892873a85d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::textur</definition>
+        <argsstring></argsstring>
+        <name>textur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="31" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1ae9bfb103a0671ec3ddf977742b2f56af" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::divisions</definition>
+        <argsstring></argsstring>
+        <name>divisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="32" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1ae1e206ea805e76084d8b61c262274275" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::orbitalPos</definition>
+        <argsstring></argsstring>
+        <name>orbitalPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="33" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1ad5833c2e6244f4ab25282d599f2358d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::inialSpeeds</definition>
+        <argsstring></argsstring>
+        <name>inialSpeeds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="34" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_planet_1_1_planet_1ae1319b268e650d44a142ce6c00ea1af1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Planet.Planet::monde</definition>
+        <argsstring></argsstring>
+        <name>monde</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="37" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1a4d39817ab5158a7bf60306be547d8918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.__init__</definition>
+        <argsstring>(self, position, anim, rotation, rotSpeed, rotPoint, movSpeed, radius, textur, divisions, monde)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1af8694f16f889c818e47599802a488d6a" kindref="member">position</ref></type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1abe2ea2453323b58011388bea1e98a1ef" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1aa1901d151ca49cbdc54cc921ddf1395c" kindref="member">rotation</ref></type>
+          <defname>rotation</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1a2fbb0761d04d9f629ca5784a6d9d4069" kindref="member">rotSpeed</ref></type>
+          <defname>rotSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1a3627c073f914ad6f8577858a0a72575a" kindref="member">rotPoint</ref></type>
+          <defname>rotPoint</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1ac17fad09591400c6991da448e7a71a17" kindref="member">movSpeed</ref></type>
+          <defname>movSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1adb5d6eb58316a4ea8e19130da279d11c" kindref="member">radius</ref></type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1a2c2f55fea699a24455e7e892873a85d1" kindref="member">textur</ref></type>
+          <defname>textur</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1ae9bfb103a0671ec3ddf977742b2f56af" kindref="member">divisions</ref></type>
+          <defname>divisions</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1ae1319b268e650d44a142ce6c00ea1af1" kindref="member">monde</ref></type>
+          <defname>monde</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>konstruktor der einen planeten anlegt
+:param position: position
+:param anim: animation
+:param rotation: raotaion
+:param rotSpeed: roataionsgeschwindiglit
+:param rotPoint: rotationsounkt
+:param movSpeed: bewwgungsgeschwindigkeit
+:param radius: radius groesse
+:param textur: tetxur des planeten
+:param divisions: unterteiungen
+:param monde: mond eines planete; kann nachtraeglich auch hinzuefugt werden
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="8" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="8" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1a9db40b7bfbfc2ae6d8022aae0643ccce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.getMondAt</definition>
+        <argsstring>(self, index)</argsstring>
+        <name>getMondAt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>gibt dem mond am index zurueck
+:param index: vom mond
+:return: mon am angegeben index
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="41" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1ab3f70808a27c64bc3d33a1a2f4a8a592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>aktualisiert die animation des planeten
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="52" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="52" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1ab2995a5e0e82b42b539a16e767ef1513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.draw</definition>
+        <argsstring>(self, top, zoom)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" kindref="member">top</ref></type>
+          <defname>top</defname>
+        </param>
+        <param>
+          <type>zoom</type>
+          <defname>zoom</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>zeichnet den planeten
+:param top:
+:param zoom:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="71" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1a9f3929354ec81ce6c7457e77897daac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.getMonde</definition>
+        <argsstring>(self)</argsstring>
+        <name>getMonde</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>gibt alle monde zurueck
+:return: alle minde
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="83" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1ac3d19601ba011492f5cb781a6866763c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.addMond</definition>
+        <argsstring>(self, m)</argsstring>
+        <name>addMond</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>fuegt einen mond hinzu
+:param m: mond
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="90" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1abdb2882d5d7c6a387029454a94e4f240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.createMond</definition>
+        <argsstring>(self, rotation, rotSpeed, entf_rotPoint, movSpeed, radius, textur, divisions)</argsstring>
+        <name>createMond</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1aa1901d151ca49cbdc54cc921ddf1395c" kindref="member">rotation</ref></type>
+          <defname>rotation</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1a2fbb0761d04d9f629ca5784a6d9d4069" kindref="member">rotSpeed</ref></type>
+          <defname>rotSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1aff4f9d7dd6cd9551c195b488f7c82516" kindref="member">entf_rotPoint</ref></type>
+          <defname>entf_rotPoint</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1ac17fad09591400c6991da448e7a71a17" kindref="member">movSpeed</ref></type>
+          <defname>movSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1adb5d6eb58316a4ea8e19130da279d11c" kindref="member">radius</ref></type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1a2c2f55fea699a24455e7e892873a85d1" kindref="member">textur</ref></type>
+          <defname>textur</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1ae9bfb103a0671ec3ddf977742b2f56af" kindref="member">divisions</ref></type>
+          <defname>divisions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>bildet einen mond und fuegt ign hinzu
+:param rotation: roation
+:param rotSpeed: rotationsgeschw
+:param entf_rotPoint: roatations entfernung zum planeten
+:param movSpeed: bewegungsgeschw
+:param radius: radius
+:param textur: textur vom mond
+:param divisions: unterteilungen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="99" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="99" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1a43b26033e8beb750ae0db7c485e388d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.animateAllChildrenFaster</definition>
+        <argsstring>(self, factor, factorMov)</argsstring>
+        <name>animateAllChildrenFaster</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>factor</type>
+          <defname>factor</defname>
+        </param>
+        <param>
+          <type>factorMov</type>
+          <defname>factorMov</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>animiert planeten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="113" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="113" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1a98ec272ebee5b23cddc830d0be2d3e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.animateAllChildrenSlower</definition>
+        <argsstring>(self, factor, factorMov)</argsstring>
+        <name>animateAllChildrenSlower</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>factor</type>
+          <defname>factor</defname>
+        </param>
+        <param>
+          <type>factorMov</type>
+          <defname>factorMov</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>animiert planeten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="127" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="127" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_planet_1_1_planet_1af95e2a01216a21bfdc5571a5a358089a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Planet.Planet.setAnimation</definition>
+        <argsstring>(self, anim)</argsstring>
+        <name>setAnimation</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_planet_1_1_planet_1abe2ea2453323b58011388bea1e98a1ef" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>animation hinzufuegen
+:param anim: animation die hinzugefuegt wird
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="147" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="147" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+      <node id="22">
+        <label>solarsystem.Planet.Planet</label>
+        <link refid="classsolarsystem_1_1_planet_1_1_planet"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+      <node id="24">
+        <label>solarsystem.Planet.Planet</label>
+        <link refid="classsolarsystem_1_1_planet_1_1_planet"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="7" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="7" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a4d39817ab5158a7bf60306be547d8918" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ac3d19601ba011492f5cb781a6866763c" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>addMond</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1abe2ea2453323b58011388bea1e98a1ef" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>anim</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a43b26033e8beb750ae0db7c485e388d8" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>animateAllChildrenFaster</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a98ec272ebee5b23cddc830d0be2d3e4e" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>animateAllChildrenSlower</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1abdb2882d5d7c6a387029454a94e4f240" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>createMond</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ae9bfb103a0671ec3ddf977742b2f56af" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>divisions</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ab2995a5e0e82b42b539a16e767ef1513" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>draw</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1aff4f9d7dd6cd9551c195b488f7c82516" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>entf_rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a9db40b7bfbfc2ae6d8022aae0643ccce" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>getMondAt</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a9f3929354ec81ce6c7457e77897daac1" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>getMonde</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ad5833c2e6244f4ab25282d599f2358d4" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>inialSpeeds</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a0a5d5c32e405bf22443a3ceb8cc949ba" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>isInArea</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ae1319b268e650d44a142ce6c00ea1af1" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>monde</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ac17fad09591400c6991da448e7a71a17" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>movSpeed</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ae1e206ea805e76084d8b61c262274275" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>orbitalPos</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1af8694f16f889c818e47599802a488d6a" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>position</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1adb5d6eb58316a4ea8e19130da279d11c" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>radius</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a6252a7fb7ef936a897d5c3f2c8dfeacd" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>rotate</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1aa1901d151ca49cbdc54cc921ddf1395c" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>rotation</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a3627c073f914ad6f8577858a0a72575a" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a2fbb0761d04d9f629ca5784a6d9d4069" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>rotSpeed</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a69694d5dba732b13ef49dd1405cd63ab" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>setAbstand</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1af95e2a01216a21bfdc5571a5a358089a" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>setAnimation</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1a2c2f55fea699a24455e7e892873a85d1" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>textur</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>top</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a84331729a97e35ffdf5a1e26385163e2" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>translate</name></member>
+      <member refid="classsolarsystem_1_1_planet_1_1_planet_1ab3f70808a27c64bc3d33a1a2f4a8a592" prot="public" virt="non-virtual"><scope>solarsystem::Planet::Planet</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

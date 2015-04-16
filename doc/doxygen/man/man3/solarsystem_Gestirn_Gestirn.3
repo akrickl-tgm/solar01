@@ -1,0 +1,206 @@
+.TH "solarsystem.Gestirn.Gestirn" 3 "Thu Apr 16 2015" "Solarsystem" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+solarsystem.Gestirn.Gestirn \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBsolarsystem\&.Asteroid\&.Asteroid\fP, \fBsolarsystem\&.Fixstern\&.Fixstern\fP, \fBsolarsystem\&.Mond\&.Mond\fP, and \fBsolarsystem\&.Planet\&.Planet\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBposition\fP, \fBanim\fP, \fBrotation\fP, \fBrotSpeed\fP, \fBrotPoint\fP, \fBentf_rotPoint\fP, \fBmovSpeed\fP, \fBradius\fP, \fBtextur\fP, \fBdivisions\fP)"
+.br
+.ti -1c
+.RI "def \fBupdate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdraw\fP (self, \fBtop\fP, zoom)"
+.br
+.ti -1c
+.RI "def \fBrotate\fP (self, \fBrotation\fP)"
+.br
+.ti -1c
+.RI "def \fBtranslate\fP (self, pos)"
+.br
+.ti -1c
+.RI "def \fBsetAnimation\fP (self, \fBanim\fP)"
+.br
+.ti -1c
+.RI "def \fBsetAbstand\fP (self, abstand)"
+.br
+.ti -1c
+.RI "def \fBisInArea\fP (self, width, height, depth)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBposition\fP"
+.br
+.ti -1c
+.RI "\fBanim\fP"
+.br
+.ti -1c
+.RI "\fBrotation\fP"
+.br
+.ti -1c
+.RI "\fBrotSpeed\fP"
+.br
+.ti -1c
+.RI "\fBrotPoint\fP"
+.br
+.ti -1c
+.RI "\fBentf_rotPoint\fP"
+.br
+.ti -1c
+.RI "\fBmovSpeed\fP"
+.br
+.ti -1c
+.RI "\fBradius\fP"
+.br
+.ti -1c
+.RI "\fBtextur\fP"
+.br
+.ti -1c
+.RI "\fBdivisions\fP"
+.br
+.ti -1c
+.RI "\fBtop\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.__init__ ( self,  position,  anim,  rotation,  rotSpeed,  rotPoint,  entf_rotPoint,  movSpeed,  radius,  textur,  divisions)"
+
+.PP
+.nf
+kosnturktor des "interfaces" getsrin
+:param position: posotion
+:param anim: animation
+:param rotation: roatation
+:param rotSpeed: rotationsgeschw
+:param rotPoint: rotationspunkt
+:param entf_rotPoint: entferntung zum rotationspkt
+:param movSpeed: bewegungsgeschw
+:param radius: radius
+:param textur: textur d gestrins
+:param divisions: unterteulungen
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.draw ( self,  top,  zoom)"
+
+.PP
+.nf
+zeichent das gestrin
+:param top:
+:param zoom:
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.isInArea ( self,  width,  height,  depth)"
+
+.PP
+.nf
+ob ein planet im sichtfeld ist
+:param width:
+:param height:
+:param depth:
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.rotate ( self,  rotation)"
+
+.PP
+.nf
+dreht den himmelskoerper
+:param rotation:
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.setAbstand ( self,  abstand)"
+
+.PP
+.nf
+abstand der gestrine setzen
+:param abstand: abstand auf den es gesetzt wird
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.setAnimation ( self,  anim)"
+
+.PP
+.nf
+setzt die animation
+:param anim: true oder false ob es sich bewegen soll
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.translate ( self,  pos)"
+
+.PP
+.nf
+bewegt das gestirn weiter
+:param pos: position um die es weiter bewegt wird
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Gestirn\&.Gestirn\&.update ( self)"
+
+.PP
+.nf
+Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.anim"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.divisions"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.entf_rotPoint"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.movSpeed"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.position"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.radius"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.rotation"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.rotPoint"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.rotSpeed"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.textur"
+
+.SS "solarsystem\&.Gestirn\&.Gestirn\&.top"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Solarsystem from the source code\&.

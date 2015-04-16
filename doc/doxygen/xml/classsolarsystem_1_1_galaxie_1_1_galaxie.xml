@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_galaxie_1_1_galaxie" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Galaxie::Galaxie</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a3be50bc50758b02522135b95c08e735c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="27" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a1d8b73aa9a9e03a8f729ff1c696d6423" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="28" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1aafff3e9025fbd45ffae18bd8c0cad92f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::mod</definition>
+        <argsstring></argsstring>
+        <name>mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="29" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1af0138399f8093211ce0209aaca669027" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::lights</definition>
+        <argsstring></argsstring>
+        <name>lights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="30" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5e8f9fe5ae37464476ac27fc601dee2c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="31" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a699b461ea3470fd1d2a4a2fe6f0f1171" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::zoom</definition>
+        <argsstring></argsstring>
+        <name>zoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="32" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa222dc4219576e17fac160147e2758b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::asteroiden</definition>
+        <argsstring></argsstring>
+        <name>asteroiden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="33" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5fa8559e9f0c3486a6c12e5be84c8a81" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="34" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1ae7afb053f0849cfafbced2e9ba59244d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="35" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a2d2d3f42a9ab1d67a36249e4222851c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::erdenTextur</definition>
+        <argsstring></argsstring>
+        <name>erdenTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="39" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a369add56f9060cffd476a930670ce65c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::jupiterTextur</definition>
+        <argsstring></argsstring>
+        <name>jupiterTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="40" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac2238de5bd7d0b8d3391ce6e6c9879be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::marsTextur</definition>
+        <argsstring></argsstring>
+        <name>marsTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="41" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac099260e3aae03295b7318f83ec4bd77" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::merkurTextur</definition>
+        <argsstring></argsstring>
+        <name>merkurTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="42" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9166c2f8550085c661bd1ee47d08cf2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::mondTextur</definition>
+        <argsstring></argsstring>
+        <name>mondTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="43" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a51097a31825581574f3852130098257a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::neptunTextur</definition>
+        <argsstring></argsstring>
+        <name>neptunTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="44" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1af022c14e97d99b8240f2acc501cf101f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::plutoTextur</definition>
+        <argsstring></argsstring>
+        <name>plutoTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="45" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a8c75c37e9c549c83252be5de7c89f94b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::saturnTextur</definition>
+        <argsstring></argsstring>
+        <name>saturnTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="46" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a750c386794bc1242777e35a1d5ad3bd5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::sonnenTextur</definition>
+        <argsstring></argsstring>
+        <name>sonnenTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="47" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a1107756a3cb5fb195e5f5d1fe37d6f8f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::uranusTextur</definition>
+        <argsstring></argsstring>
+        <name>uranusTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="48" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a22082f47a546f4044d4ba643a21d0339" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::venusTextur</definition>
+        <argsstring></argsstring>
+        <name>venusTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="49" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5d3abdbf4816e96aeff8bebea5233920" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::asteroidTextur</definition>
+        <argsstring></argsstring>
+        <name>asteroidTextur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="50" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1af56d2852ee1f196d43359e51aa65e10f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::sonne</definition>
+        <argsstring></argsstring>
+        <name>sonne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="89" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a8d00181a9449447acb4e52d16c3d390e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::merkur</definition>
+        <argsstring></argsstring>
+        <name>merkur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="92" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a979be772dc0327b0b7b44777498a830a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::venus</definition>
+        <argsstring></argsstring>
+        <name>venus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="93" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a2dcd41d70c1c9e7c115f96ba58cdd885" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::erde</definition>
+        <argsstring></argsstring>
+        <name>erde</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="94" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9ac13b067afe871fc2e5198b27debc6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::mars</definition>
+        <argsstring></argsstring>
+        <name>mars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="95" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a87c74999ca93c999de9e1b228ae6fe74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::jupiter</definition>
+        <argsstring></argsstring>
+        <name>jupiter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="96" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac97b04a989f514fb9d52748a174b1eff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::saturn</definition>
+        <argsstring></argsstring>
+        <name>saturn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="97" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9f12a4944ea5cc5ae5ea687449222e58" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::uranus</definition>
+        <argsstring></argsstring>
+        <name>uranus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="98" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a74d704f9335f06d3edbbe44d3e7ba968" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::neptun</definition>
+        <argsstring></argsstring>
+        <name>neptun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="99" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a678ecd217b6ceb205c0c4b3d47e83305" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::pluto</definition>
+        <argsstring></argsstring>
+        <name>pluto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="100" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a55d2dccfaf0f4f6ce4690ee7753eea28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Galaxie.Galaxie::mond</definition>
+        <argsstring></argsstring>
+        <name>mond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="103" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa6c18f783cb880290bc68f2623d3314e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.__init__</definition>
+        <argsstring>(self, width, height)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5fa8559e9f0c3486a6c12e5be84c8a81" kindref="member">width</ref></type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ae7afb053f0849cfafbced2e9ba59244d" kindref="member">height</ref></type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="19" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="19" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a6ae7aa8bb8f10bae6628c9b792beb28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.loadTextures</definition>
+        <argsstring>(self)</argsstring>
+        <name>loadTextures</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>alle texturen laden die verwendet werden
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="52" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="52" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a4fdbab160a92accf3ba7f9e14e2f7459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.pauseAll</definition>
+        <argsstring>(self)</argsstring>
+        <name>pauseAll</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>methode um alle bewegungen zu pasuerien
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="69" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a05ea6560139aa57fc9a6b57bba1c35fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.playAll</definition>
+        <argsstring>(self)</argsstring>
+        <name>playAll</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>methode um alle bwewgungen zu aktivieren
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="75" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa9797f4d26c0a729f1388d1c1a34e5fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.loadPlanets</definition>
+        <argsstring>(self)</argsstring>
+        <name>loadPlanets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>alle planeten anlegen
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="81" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="81" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a6ed15a86c6bc02f46fcc1f55eb65e5b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.enableTextures</definition>
+        <argsstring>(self)</argsstring>
+        <name>enableTextures</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>texturen aktivieren
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="119" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="119" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa06fb2fbc96a4a603e853550a277fa57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.disableTextures</definition>
+        <argsstring>(self)</argsstring>
+        <name>disableTextures</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>texturen deaktiviere - alles wird weiss angezeigt
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="125" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a0022ade3e51d94925a83152377688249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.init</definition>
+        <argsstring>(self, Width, Height)</argsstring>
+        <name>init</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Width</type>
+          <defname>Width</defname>
+        </param>
+        <param>
+          <type>Height</type>
+          <defname>Height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>screen vorbereiten
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="131" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="131" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1ab5fc46fce205d4ecfa0728f223327375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.ReSizeGLScene</definition>
+        <argsstring>(self, Width, Height)</argsstring>
+        <name>ReSizeGLScene</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Width</type>
+          <defname>Width</defname>
+        </param>
+        <param>
+          <type>Height</type>
+          <defname>Height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>bei veranederung der fenstergroesse, die galaxie anpassen
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="159" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="159" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a4b12cf9d86803c7f52bcb802d17fc071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.DrawGLScene</definition>
+        <argsstring>(self)</argsstring>
+        <name>DrawGLScene</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>alle komponenten zeichnen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="181" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="181" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5f735ca728d81a648638e63663db6402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>alle komponenten aktualisierne
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="200" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="200" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5aec0be2303b2ec3b9a65d08c8f56eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.addAsteroid</definition>
+        <argsstring>(self)</argsstring>
+        <name>addAsteroid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>asteroidden hinzufuegen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="219" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="219" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_galaxie_1_1_galaxie_1a626b1f4b04809a720b7c199a734337e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Galaxie.Galaxie.keyPressed</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>keyPressed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>handling der tastaturbefehle
+:param args: eingehender tastenbefehl
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="243" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="243" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="17" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="17" bodyend="291"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa6c18f783cb880290bc68f2623d3314e" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5aec0be2303b2ec3b9a65d08c8f56eb0" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>addAsteroid</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5e8f9fe5ae37464476ac27fc601dee2c" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>anim</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa222dc4219576e17fac160147e2758b7" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>asteroiden</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5d3abdbf4816e96aeff8bebea5233920" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>asteroidTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa06fb2fbc96a4a603e853550a277fa57" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>disableTextures</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a4b12cf9d86803c7f52bcb802d17fc071" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>DrawGLScene</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a6ed15a86c6bc02f46fcc1f55eb65e5b6" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>enableTextures</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a2dcd41d70c1c9e7c115f96ba58cdd885" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>erde</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a2d2d3f42a9ab1d67a36249e4222851c8" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>erdenTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ae7afb053f0849cfafbced2e9ba59244d" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>height</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a0022ade3e51d94925a83152377688249" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>init</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a87c74999ca93c999de9e1b228ae6fe74" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>jupiter</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a369add56f9060cffd476a930670ce65c" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>jupiterTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a626b1f4b04809a720b7c199a734337e5" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>keyPressed</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a3be50bc50758b02522135b95c08e735c" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>light</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1af0138399f8093211ce0209aaca669027" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>lights</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1aa9797f4d26c0a729f1388d1c1a34e5fd" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>loadPlanets</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a6ae7aa8bb8f10bae6628c9b792beb28c" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>loadTextures</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9ac13b067afe871fc2e5198b27debc6a" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>mars</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac2238de5bd7d0b8d3391ce6e6c9879be" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>marsTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a8d00181a9449447acb4e52d16c3d390e" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>merkur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac099260e3aae03295b7318f83ec4bd77" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>merkurTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1aafff3e9025fbd45ffae18bd8c0cad92f" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>mod</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a55d2dccfaf0f4f6ce4690ee7753eea28" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>mond</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9166c2f8550085c661bd1ee47d08cf2a" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>mondTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a74d704f9335f06d3edbbe44d3e7ba968" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>neptun</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a51097a31825581574f3852130098257a" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>neptunTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a4fdbab160a92accf3ba7f9e14e2f7459" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>pauseAll</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a05ea6560139aa57fc9a6b57bba1c35fa" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>playAll</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a678ecd217b6ceb205c0c4b3d47e83305" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>pluto</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1af022c14e97d99b8240f2acc501cf101f" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>plutoTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a1d8b73aa9a9e03a8f729ff1c696d6423" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>pos</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ab5fc46fce205d4ecfa0728f223327375" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>ReSizeGLScene</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1ac97b04a989f514fb9d52748a174b1eff" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>saturn</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a8c75c37e9c549c83252be5de7c89f94b" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>saturnTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1af56d2852ee1f196d43359e51aa65e10f" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>sonne</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a750c386794bc1242777e35a1d5ad3bd5" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>sonnenTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5f735ca728d81a648638e63663db6402" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>update</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a9f12a4944ea5cc5ae5ea687449222e58" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>uranus</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a1107756a3cb5fb195e5f5d1fe37d6f8f" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>uranusTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a979be772dc0327b0b7b44777498a830a" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>venus</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a22082f47a546f4044d4ba643a21d0339" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>venusTextur</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a5fa8559e9f0c3486a6c12e5be84c8a81" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>width</name></member>
+      <member refid="classsolarsystem_1_1_galaxie_1_1_galaxie_1a699b461ea3470fd1d2a4a2fe6f0f1171" prot="public" virt="non-virtual"><scope>solarsystem::Galaxie::Galaxie</scope><name>zoom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

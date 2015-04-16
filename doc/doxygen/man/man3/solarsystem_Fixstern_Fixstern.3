@@ -1,0 +1,238 @@
+.TH "solarsystem.Fixstern.Fixstern" 3 "Thu Apr 16 2015" "Solarsystem" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+solarsystem.Fixstern.Fixstern \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBsolarsystem\&.Gestirn\&.Gestirn\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBposition\fP, \fBrotSpeed\fP, \fBtextur\fP, \fBplaneten\fP, \fBanim\fP, \fBlicht\fP, \fBradius\fP, \fBdivisions\fP)"
+.br
+.ti -1c
+.RI "def \fBaddPlanet\fP (self, planet)"
+.br
+.ti -1c
+.RI "def \fBgetPlanetAt\fP (self, index)"
+.br
+.ti -1c
+.RI "def \fBgetPlaneten\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsetAnimation\fP (self, \fBanim\fP)"
+.br
+.ti -1c
+.RI "def \fBdraw\fP (self, \fBtop\fP, zoom)"
+.br
+.ti -1c
+.RI "def \fBupdate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBanimateAllChildrenFaster\fP (self, factor, factorMov)"
+.br
+.ti -1c
+.RI "def \fBanimateAllChildrenSlower\fP (self, factor, factorMov)"
+.br
+.ti -1c
+.RI "def \fBdisableLight\fP (self)"
+.br
+.ti -1c
+.RI "def \fBenableLight\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBposition\fP"
+.br
+.ti -1c
+.RI "\fBanim\fP"
+.br
+.ti -1c
+.RI "\fBtextur\fP"
+.br
+.ti -1c
+.RI "\fBdivisions\fP"
+.br
+.ti -1c
+.RI "\fBlicht\fP"
+.br
+.ti -1c
+.RI "\fBradius\fP"
+.br
+.ti -1c
+.RI "\fBrotation\fP"
+.br
+.ti -1c
+.RI "\fBrotSpeed\fP"
+.br
+.ti -1c
+.RI "\fBinialSpeeds\fP"
+.br
+.ti -1c
+.RI "\fBplaneten\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.__init__ ( self,  position,  rotSpeed,  textur,  planeten,  anim,  licht,  radius,  divisions)"
+
+.PP
+.nf
+kosnturktor um einen fixstern anzulegen
+:param position: posiition
+:param rotSpeed: rotationsgeschw
+:param textur: textur des fixsterns
+:param planeten: planeten die um ihn rotieren - koennen spaeter acuh hinuzgefuegt werden
+:param anim: animation
+:param licht: belichtung
+:param radius: radisu
+:param divisions: unterteilungen
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.addPlanet ( self,  planet)"
+
+.PP
+.nf
+planeten hinzufuegen
+:param planet: planet der zum fixstern hinzugefuegt wird
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.animateAllChildrenFaster ( self,  factor,  factorMov)"
+
+.PP
+.nf
+animiert alle kindplaneten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.animateAllChildrenSlower ( self,  factor,  factorMov)"
+
+.PP
+.nf
+animiert alle kindplaneten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.disableLight ( self)"
+
+.PP
+.nf
+deaktiviert das licht
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.draw ( self,  top,  zoom)"
+
+.PP
+.nf
+zeichnet den fixstern
+:param top:
+:param zoom:
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.enableLight ( self)"
+
+.PP
+.nf
+aktiviert das licht
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.getPlanetAt ( self,  index)"
+
+.PP
+.nf
+gibt einen planeten an einem index zurueck
+:param index: index des planeten
+:return: planet
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.getPlaneten ( self)"
+
+.PP
+.nf
+gitb alle planeten zurueck
+:return: alle planeten
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.setAnimation ( self,  anim)"
+
+.PP
+.nf
+setzt die animation
+:param anim: animationswert
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Fixstern\&.Fixstern\&.update ( self)"
+
+.PP
+.nf
+aktualisiert die bewegugn des fixsterns
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.anim"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.divisions"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.inialSpeeds"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.licht"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.planeten"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.position"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.radius"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.rotation"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.rotSpeed"
+
+.SS "solarsystem\&.Fixstern\&.Fixstern\&.textur"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Solarsystem from the source code\&.

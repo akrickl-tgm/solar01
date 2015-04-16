@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_6c2b516f0168c10151e29d9561a640cc" kind="dir">
+    <compoundname>/Users/Daniel/PycharmProjects/solar01-master</compoundname>
+    <innerdir refid="dir_71ee2a612f1d3d4ba9396323a2c13fae">/Users/Daniel/PycharmProjects/solar01-master/solarsystem</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/"/>
+  </compounddef>
+</doxygen>

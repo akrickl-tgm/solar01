@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem" kind="namespace" language="Python">
+    <compoundname>solarsystem</compoundname>
+    <innernamespace refid="namespacesolarsystem_1_1_asteroid">solarsystem::Asteroid</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_fixstern">solarsystem::Fixstern</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_galaxie">solarsystem::Galaxie</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_gestirn">solarsystem::Gestirn</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_light">solarsystem::Light</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_mond">solarsystem::Mond</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_planet">solarsystem::Planet</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1splashscreen">solarsystem::splashscreen</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1start">solarsystem::start</innernamespace>
+    <innernamespace refid="namespacesolarsystem_1_1_texturen">solarsystem::Texturen</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
