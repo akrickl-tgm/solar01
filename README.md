@@ -1,5 +1,5 @@
 # Solarsystem
-Kooperierendes Projekt zwischen Softwareentwicklung und Medientechnik.
+Kooperierendes OpenGL-Projekt zwischen Softwareentwicklung und Medientechnik.
 
 Steuerung
 ---
