@@ -83,16 +83,20 @@ class Gestirn:
     def rotate(self, rotation):
         """
         dreht den himmelskoerper
-        :param rotation:
+        :param rotation: array mit den werten
         :return:
         """
         # Nur wenn das Array drei werte hat, weitermachen
-        if len(rotation) == 3:
-            self.rotation[0] += rotation[0]
-            self.rotation[1] += rotation[1]
-            self.rotation[2] += rotation[2]
+        if isinstance(rotation, list) and len(rotation) == 3:
+            if rotation[0] >= 0:
+                self.rotation[0] += rotation[0]
+            if rotation[1] >= 0:
+                self.rotation[1] += rotation[1]
+            if rotation[2] >= 0:
+                self.rotation[2] += rotation[2]
+        else:
+            raise TypeError
 
-        # TODO: Werte auf Sinnhaftigkeit pruefen
 
     def translate(self, pos):
         """
@@ -100,13 +104,16 @@ class Gestirn:
         :param pos: position um die es weiter bewegt wird
         :return:
         """
-        if len(pos) == 3:
+        if isinstance(pos, list) and len(pos) == 3:
             # Nur wenn das Array drei werte hat, weitermachen
-            self.position[0] += pos[0]
-            self.position[1] += pos[1]
-            self.position[2] += pos[2]
-
-        # TODO: Werte auf Sinnhaftigkeit pruefen
+            if pos[0] >= 0:
+                self.position[0] += pos[0]
+            if pos[1] >= 0:
+                self.position[1] += pos[1]
+            if pos[2] >= 0:
+                self.position[2] += pos[2]
+        else:
+            raise TypeError("Array with len 3 needed")
 
     def setAnimation(self, anim):
         """
@@ -125,7 +132,10 @@ class Gestirn:
         """
         # Nur wenn der Abstand numerisch ist, weitermachen
         if isinstance(abstand, int) or isinstance(abstand, float):
-            self.entf_rotPoint = abstand
+            if abstand >= 0:
+                self.entf_rotPoint = abstand
+        else:
+            raise TypeError
 
     def isInArea(self, width, height, depth):
         """
