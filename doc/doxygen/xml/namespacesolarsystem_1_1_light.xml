@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1_light" kind="namespace" language="Python">
+    <compoundname>solarsystem::Light</compoundname>
+    <innerclass refid="classsolarsystem_1_1_light_1_1_light" prot="public">solarsystem::Light::Light</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_light_1af829fdad4290a671e412df17e2442312" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Light.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Daniel&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

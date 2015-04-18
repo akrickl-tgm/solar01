@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1_planet" kind="namespace" language="Python">
+    <compoundname>solarsystem::Planet</compoundname>
+    <innerclass refid="classsolarsystem_1_1_planet_1_1_planet" prot="public">solarsystem::Planet::Planet</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_planet_1a0c8380d5b9427b173f95da0fd8f5f69e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Planet.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Daniel Herczeg&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Planet.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

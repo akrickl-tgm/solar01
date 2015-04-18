@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1_fixstern" kind="namespace" language="Python">
+    <compoundname>solarsystem::Fixstern</compoundname>
+    <innerclass refid="classsolarsystem_1_1_fixstern_1_1_fixstern" prot="public">solarsystem::Fixstern::Fixstern</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_fixstern_1a7d585572eed44d509ff44c836cefbae3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Fixstern.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Daniel&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

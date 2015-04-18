@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_texturen_1_1_texturen" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Texturen::Texturen</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_texturen_1_1_texturen_1a07e8749d216f69698ff7cf2e310a68b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Texturen.Texturen.LoadTexture</definition>
+        <argsstring>(pic)</argsstring>
+        <name>LoadTexture</name>
+        <param>
+          <type>pic</type>
+          <defname>pic</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>ladet eine textur
+:param pic: pfad des Bilds der als textur geladen werden soll
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" line="12" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" bodystart="12" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" line="9" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" bodystart="9" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_texturen_1_1_texturen_1a07e8749d216f69698ff7cf2e310a68b3" prot="public" virt="non-virtual"><scope>solarsystem::Texturen::Texturen</scope><name>LoadTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

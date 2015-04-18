@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1_galaxie" kind="namespace" language="Python">
+    <compoundname>solarsystem::Galaxie</compoundname>
+    <innerclass refid="classsolarsystem_1_1_galaxie_1_1_galaxie" prot="public">solarsystem::Galaxie::Galaxie</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_galaxie_1ac026be488457a6e5930773a48c9055fe" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Galaxie.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Astrid Krickl, Daniel Herczeg&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_galaxie_1af5910970f51810bc796fce8bce1631f2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Galaxie.ESCAPE</definition>
+        <argsstring></argsstring>
+        <name>ESCAPE</name>
+        <initializer>= &apos;\033&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="14" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Galaxie.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

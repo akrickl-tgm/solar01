@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_light_1_1_light" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Light::Light</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_light_1_1_light_1af973a0ff16ecf41dc256f20b0e8345ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Light.Light::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="11" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_light_1_1_light_1af1c49fe1b540165025e4d6f5803e34be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Light.Light::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="12" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_light_1_1_light_1add11801e53b74bdb8792d6c652aa150a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Light.Light::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="13" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_light_1_1_light_1a725a925e337a9c9e5fbf3260da35d603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Light.Light.__init__</definition>
+        <argsstring>(self, position, color)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_light_1_1_light_1add11801e53b74bdb8792d6c652aa150a" kindref="member">position</ref></type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_light_1_1_light_1af1c49fe1b540165025e4d6f5803e34be" kindref="member">color</ref></type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Konstruktor für das licht
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="7" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_light_1_1_light_1ad01b5fb35e74b8492b9216a2cb723940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Light.Light.init</definition>
+        <argsstring>(self)</argsstring>
+        <name>init</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>initialisiert das licht
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="15" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="15" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_light_1_1_light_1a3626d0e9dfcded256a88e6e72c6222c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Light.Light.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>zeichnet das licht je nach dem ob schatten erwuensch sind
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="45" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="45" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_light_1_1_light_1a27009143a09bcd47fe238e16fafc9248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Light.Light.disable</definition>
+        <argsstring>(self)</argsstring>
+        <name>disable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deaktiviert das licht
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="69" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_light_1_1_light_1a417d2df72204b4a11c5f16c356c83bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Light.Light.enable</definition>
+        <argsstring>(self)</argsstring>
+        <name>enable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>aktiviert das licht
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="76" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="76" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" line="6" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Light.py" bodystart="6" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1a725a925e337a9c9e5fbf3260da35d603" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1af1c49fe1b540165025e4d6f5803e34be" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>color</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1a27009143a09bcd47fe238e16fafc9248" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>disable</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1a3626d0e9dfcded256a88e6e72c6222c1" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>draw</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1a417d2df72204b4a11c5f16c356c83bbd" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>enable</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1af973a0ff16ecf41dc256f20b0e8345ee" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>enabled</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1ad01b5fb35e74b8492b9216a2cb723940" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>init</name></member>
+      <member refid="classsolarsystem_1_1_light_1_1_light_1add11801e53b74bdb8792d6c652aa150a" prot="public" virt="non-virtual"><scope>solarsystem::Light::Light</scope><name>position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

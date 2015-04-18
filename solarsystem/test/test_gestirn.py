@@ -1,5 +1,5 @@
 from unittest import TestCase
-from solarsystem.Gestirn import *
+from  .Gestirn import *
 
 __author__ = 'Daniel Herczeg'
 

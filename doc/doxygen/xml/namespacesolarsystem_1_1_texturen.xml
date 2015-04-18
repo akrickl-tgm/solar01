@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1_texturen" kind="namespace" language="Python">
+    <compoundname>solarsystem::Texturen</compoundname>
+    <innerclass refid="classsolarsystem_1_1_texturen_1_1_texturen" prot="public">solarsystem::Texturen::Texturen</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesolarsystem_1_1_texturen_1a5cb56c13fd0dcc83b0cdb1dc4895dc27" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string solarsystem::Texturen.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;Astrid Krickl&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" line="1" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Texturen.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

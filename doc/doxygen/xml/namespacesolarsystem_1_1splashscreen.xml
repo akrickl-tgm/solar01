@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespacesolarsystem_1_1splashscreen" kind="namespace" language="Python">
+    <compoundname>solarsystem::splashscreen</compoundname>
+    <innerclass refid="classsolarsystem_1_1splashscreen_1_1_splash" prot="public">solarsystem::splashscreen::Splash</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/splashscreen.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

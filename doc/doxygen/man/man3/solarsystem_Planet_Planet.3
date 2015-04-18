@@ -1,0 +1,249 @@
+.TH "solarsystem.Planet.Planet" 3 "Thu Apr 16 2015" "Solarsystem" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+solarsystem.Planet.Planet \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBsolarsystem\&.Gestirn\&.Gestirn\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBposition\fP, \fBanim\fP, \fBrotation\fP, \fBrotSpeed\fP, \fBrotPoint\fP, \fBmovSpeed\fP, \fBradius\fP, \fBtextur\fP, \fBdivisions\fP, \fBmonde\fP)"
+.br
+.ti -1c
+.RI "def \fBgetMondAt\fP (self, index)"
+.br
+.ti -1c
+.RI "def \fBupdate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdraw\fP (self, \fBtop\fP, zoom)"
+.br
+.ti -1c
+.RI "def \fBgetMonde\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaddMond\fP (self, m)"
+.br
+.ti -1c
+.RI "def \fBcreateMond\fP (self, \fBrotation\fP, \fBrotSpeed\fP, \fBentf_rotPoint\fP, \fBmovSpeed\fP, \fBradius\fP, \fBtextur\fP, \fBdivisions\fP)"
+.br
+.ti -1c
+.RI "def \fBanimateAllChildrenFaster\fP (self, factor, factorMov)"
+.br
+.ti -1c
+.RI "def \fBanimateAllChildrenSlower\fP (self, factor, factorMov)"
+.br
+.ti -1c
+.RI "def \fBsetAnimation\fP (self, \fBanim\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBposition\fP"
+.br
+.ti -1c
+.RI "\fBanim\fP"
+.br
+.ti -1c
+.RI "\fBrotation\fP"
+.br
+.ti -1c
+.RI "\fBrotSpeed\fP"
+.br
+.ti -1c
+.RI "\fBrotPoint\fP"
+.br
+.ti -1c
+.RI "\fBentf_rotPoint\fP"
+.br
+.ti -1c
+.RI "\fBmovSpeed\fP"
+.br
+.ti -1c
+.RI "\fBradius\fP"
+.br
+.ti -1c
+.RI "\fBtextur\fP"
+.br
+.ti -1c
+.RI "\fBdivisions\fP"
+.br
+.ti -1c
+.RI "\fBorbitalPos\fP"
+.br
+.ti -1c
+.RI "\fBinialSpeeds\fP"
+.br
+.ti -1c
+.RI "\fBmonde\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def solarsystem\&.Planet\&.Planet\&.__init__ ( self,  position,  anim,  rotation,  rotSpeed,  rotPoint,  movSpeed,  radius,  textur,  divisions,  monde)"
+
+.PP
+.nf
+konstruktor der einen planeten anlegt
+:param position: position
+:param anim: animation
+:param rotation: raotaion
+:param rotSpeed: roataionsgeschwindiglit
+:param rotPoint: rotationsounkt
+:param movSpeed: bewwgungsgeschwindigkeit
+:param radius: radius groesse
+:param textur: tetxur des planeten
+:param divisions: unterteiungen
+:param monde: mond eines planete; kann nachtraeglich auch hinzuefugt werden
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def solarsystem\&.Planet\&.Planet\&.addMond ( self,  m)"
+
+.PP
+.nf
+fuegt einen mond hinzu
+:param m: mond
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.animateAllChildrenFaster ( self,  factor,  factorMov)"
+
+.PP
+.nf
+animiert planeten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.animateAllChildrenSlower ( self,  factor,  factorMov)"
+
+.PP
+.nf
+animiert planeten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.createMond ( self,  rotation,  rotSpeed,  entf_rotPoint,  movSpeed,  radius,  textur,  divisions)"
+
+.PP
+.nf
+bildet einen mond und fuegt ign hinzu
+:param rotation: roation
+:param rotSpeed: rotationsgeschw
+:param entf_rotPoint: roatations entfernung zum planeten
+:param movSpeed: bewegungsgeschw
+:param radius: radius
+:param textur: textur vom mond
+:param divisions: unterteilungen
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.draw ( self,  top,  zoom)"
+
+.PP
+.nf
+zeichnet den planeten
+:param top:
+:param zoom:
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.getMondAt ( self,  index)"
+
+.PP
+.nf
+gibt dem mond am index zurueck
+:param index: vom mond
+:return: mon am angegeben index
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.getMonde ( self)"
+
+.PP
+.nf
+gibt alle monde zurueck
+:return: alle minde
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.setAnimation ( self,  anim)"
+
+.PP
+.nf
+animation hinzufuegen
+:param anim: animation die hinzugefuegt wird
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Planet\&.Planet\&.update ( self)"
+
+.PP
+.nf
+aktualisiert die animation des planeten
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "solarsystem\&.Planet\&.Planet\&.anim"
+
+.SS "solarsystem\&.Planet\&.Planet\&.divisions"
+
+.SS "solarsystem\&.Planet\&.Planet\&.entf_rotPoint"
+
+.SS "solarsystem\&.Planet\&.Planet\&.inialSpeeds"
+
+.SS "solarsystem\&.Planet\&.Planet\&.monde"
+
+.SS "solarsystem\&.Planet\&.Planet\&.movSpeed"
+
+.SS "solarsystem\&.Planet\&.Planet\&.orbitalPos"
+
+.SS "solarsystem\&.Planet\&.Planet\&.position"
+
+.SS "solarsystem\&.Planet\&.Planet\&.radius"
+
+.SS "solarsystem\&.Planet\&.Planet\&.rotation"
+
+.SS "solarsystem\&.Planet\&.Planet\&.rotPoint"
+
+.SS "solarsystem\&.Planet\&.Planet\&.rotSpeed"
+
+.SS "solarsystem\&.Planet\&.Planet\&.textur"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Solarsystem from the source code\&.

@@ -1,0 +1,340 @@
+.TH "solarsystem.Galaxie.Galaxie" 3 "Thu Apr 16 2015" "Solarsystem" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+solarsystem.Galaxie.Galaxie \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBwidth\fP, \fBheight\fP)"
+.br
+.ti -1c
+.RI "def \fBloadTextures\fP (self)"
+.br
+.ti -1c
+.RI "def \fBpauseAll\fP (self)"
+.br
+.ti -1c
+.RI "def \fBplayAll\fP (self)"
+.br
+.ti -1c
+.RI "def \fBloadPlanets\fP (self)"
+.br
+.ti -1c
+.RI "def \fBenableTextures\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdisableTextures\fP (self)"
+.br
+.ti -1c
+.RI "def \fBinit\fP (self, Width, Height)"
+.br
+.ti -1c
+.RI "def \fBReSizeGLScene\fP (self, Width, Height)"
+.br
+.ti -1c
+.RI "def \fBDrawGLScene\fP (self)"
+.br
+.ti -1c
+.RI "def \fBupdate\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaddAsteroid\fP (self)"
+.br
+.ti -1c
+.RI "def \fBkeyPressed\fP (self, args)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlight\fP"
+.br
+.ti -1c
+.RI "\fBpos\fP"
+.br
+.ti -1c
+.RI "\fBmod\fP"
+.br
+.ti -1c
+.RI "\fBlights\fP"
+.br
+.ti -1c
+.RI "\fBanim\fP"
+.br
+.ti -1c
+.RI "\fBzoom\fP"
+.br
+.ti -1c
+.RI "\fBasteroiden\fP"
+.br
+.ti -1c
+.RI "\fBwidth\fP"
+.br
+.ti -1c
+.RI "\fBheight\fP"
+.br
+.ti -1c
+.RI "\fBerdenTextur\fP"
+.br
+.ti -1c
+.RI "\fBjupiterTextur\fP"
+.br
+.ti -1c
+.RI "\fBmarsTextur\fP"
+.br
+.ti -1c
+.RI "\fBmerkurTextur\fP"
+.br
+.ti -1c
+.RI "\fBmondTextur\fP"
+.br
+.ti -1c
+.RI "\fBneptunTextur\fP"
+.br
+.ti -1c
+.RI "\fBplutoTextur\fP"
+.br
+.ti -1c
+.RI "\fBsaturnTextur\fP"
+.br
+.ti -1c
+.RI "\fBsonnenTextur\fP"
+.br
+.ti -1c
+.RI "\fBuranusTextur\fP"
+.br
+.ti -1c
+.RI "\fBvenusTextur\fP"
+.br
+.ti -1c
+.RI "\fBasteroidTextur\fP"
+.br
+.ti -1c
+.RI "\fBsonne\fP"
+.br
+.ti -1c
+.RI "\fBmerkur\fP"
+.br
+.ti -1c
+.RI "\fBvenus\fP"
+.br
+.ti -1c
+.RI "\fBerde\fP"
+.br
+.ti -1c
+.RI "\fBmars\fP"
+.br
+.ti -1c
+.RI "\fBjupiter\fP"
+.br
+.ti -1c
+.RI "\fBsaturn\fP"
+.br
+.ti -1c
+.RI "\fBuranus\fP"
+.br
+.ti -1c
+.RI "\fBneptun\fP"
+.br
+.ti -1c
+.RI "\fBpluto\fP"
+.br
+.ti -1c
+.RI "\fBmond\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.__init__ ( self,  width,  height)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.addAsteroid ( self)"
+
+.PP
+.nf
+asteroidden hinzufuegen
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.disableTextures ( self)"
+
+.PP
+.nf
+texturen deaktiviere - alles wird weiss angezeigt
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.DrawGLScene ( self)"
+
+.PP
+.nf
+alle komponenten zeichnen
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.enableTextures ( self)"
+
+.PP
+.nf
+texturen aktivieren
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.init ( self,  Width,  Height)"
+
+.PP
+.nf
+screen vorbereiten
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.keyPressed ( self,  args)"
+
+.PP
+.nf
+handling der tastaturbefehle
+:param args: eingehender tastenbefehl
+:return:
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.loadPlanets ( self)"
+
+.PP
+.nf
+alle planeten anlegen
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.loadTextures ( self)"
+
+.PP
+.nf
+alle texturen laden die verwendet werden
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.pauseAll ( self)"
+
+.PP
+.nf
+methode um alle bewegungen zu pasuerien
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.playAll ( self)"
+
+.PP
+.nf
+methode um alle bwewgungen zu aktivieren
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.ReSizeGLScene ( self,  Width,  Height)"
+
+.PP
+.nf
+bei veranederung der fenstergroesse, die galaxie anpassen
+
+.fi
+.PP
+ 
+.SS "def solarsystem\&.Galaxie\&.Galaxie\&.update ( self)"
+
+.PP
+.nf
+alle komponenten aktualisierne
+:return:
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.anim"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.asteroiden"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.asteroidTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.erde"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.erdenTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.height"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.jupiter"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.jupiterTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.light"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.lights"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.mars"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.marsTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.merkur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.merkurTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.mod"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.mond"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.mondTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.neptun"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.neptunTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.pluto"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.plutoTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.pos"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.saturn"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.saturnTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.sonne"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.sonnenTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.uranus"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.uranusTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.venus"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.venusTextur"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.width"
+
+.SS "solarsystem\&.Galaxie\&.Galaxie\&.zoom"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Solarsystem from the source code\&.

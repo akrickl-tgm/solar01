@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classsolarsystem_1_1_fixstern_1_1_fixstern" kind="class" language="Python" prot="public">
+    <compoundname>solarsystem::Fixstern::Fixstern</compoundname>
+    <basecompoundref refid="classsolarsystem_1_1_gestirn_1_1_gestirn" prot="public" virt="non-virtual">solarsystem.Gestirn.Gestirn</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ab5a8d47fb63ee025500fbd738db7ecf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="21" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad11d5c6599be4daa4d3b79d03bbc4b6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="22" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad15c201a05ef87cf68329b4594ab0112" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::textur</definition>
+        <argsstring></argsstring>
+        <name>textur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="23" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1acada4e88ce2576f4f7e49153e8b8ac2e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::divisions</definition>
+        <argsstring></argsstring>
+        <name>divisions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="24" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a86cb1a3bf000562fd19939652bc2e2dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::licht</definition>
+        <argsstring></argsstring>
+        <name>licht</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="25" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a19d12910c8b20b4730f508d3726890f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="26" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1acc3916ceddb4212b98b8f3cd02b1fdb7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="27" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ac9d43db60cc21b22a92c543c88e81b68" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::rotSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="28" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a3f0d3840011a9ec70d2b7770aef2f08c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::inialSpeeds</definition>
+        <argsstring></argsstring>
+        <name>inialSpeeds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="29" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a361328aacfd2da4a207dbf22ee4498f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>solarsystem.Fixstern.Fixstern::planeten</definition>
+        <argsstring></argsstring>
+        <name>planeten</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="32" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a8132f04e2b4b418d190d810c054bdbd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.__init__</definition>
+        <argsstring>(self, position, rotSpeed, textur, planeten, anim, licht, radius, divisions)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ab5a8d47fb63ee025500fbd738db7ecf8" kindref="member">position</ref></type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ac9d43db60cc21b22a92c543c88e81b68" kindref="member">rotSpeed</ref></type>
+          <defname>rotSpeed</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad15c201a05ef87cf68329b4594ab0112" kindref="member">textur</ref></type>
+          <defname>textur</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a361328aacfd2da4a207dbf22ee4498f1" kindref="member">planeten</ref></type>
+          <defname>planeten</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad11d5c6599be4daa4d3b79d03bbc4b6a" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a86cb1a3bf000562fd19939652bc2e2dd" kindref="member">licht</ref></type>
+          <defname>licht</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a19d12910c8b20b4730f508d3726890f4" kindref="member">radius</ref></type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1acada4e88ce2576f4f7e49153e8b8ac2e" kindref="member">divisions</ref></type>
+          <defname>divisions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>kosnturktor um einen fixstern anzulegen
+:param position: posiition
+:param rotSpeed: rotationsgeschw
+:param textur: textur des fixsterns
+:param planeten: planeten die um ihn rotieren - koennen spaeter acuh hinuzgefuegt werden
+:param anim: animation
+:param licht: belichtung
+:param radius: radisu
+:param divisions: unterteilungen
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="8" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="8" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a87b7653b635702ae96f97bd9f3703991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.addPlanet</definition>
+        <argsstring>(self, planet)</argsstring>
+        <name>addPlanet</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>planet</type>
+          <defname>planet</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>planeten hinzufuegen
+:param planet: planet der zum fixstern hinzugefuegt wird
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="36" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1aa66c00060104e69ac7d0ed12a520a22a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.getPlanetAt</definition>
+        <argsstring>(self, index)</argsstring>
+        <name>getPlanetAt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>gibt einen planeten an einem index zurueck
+:param index: index des planeten
+:return: planet
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="44" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a6276d0c9e35bdf957b8f971ee06c3988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.getPlaneten</definition>
+        <argsstring>(self)</argsstring>
+        <name>getPlaneten</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>gitb alle planeten zurueck
+:return: alle planeten
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="52" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a9420414b5b36043d9a7e35cc1fd31309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.setAnimation</definition>
+        <argsstring>(self, anim)</argsstring>
+        <name>setAnimation</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad11d5c6599be4daa4d3b79d03bbc4b6a" kindref="member">anim</ref></type>
+          <defname>anim</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>setzt die animation
+:param anim: animationswert
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="59" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a1a42ed0c18b1f4b953bcf5cc4f1d807e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.draw</definition>
+        <argsstring>(self, top, zoom)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" kindref="member">top</ref></type>
+          <defname>top</defname>
+        </param>
+        <param>
+          <type>zoom</type>
+          <defname>zoom</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>zeichnet den fixstern
+:param top:
+:param zoom:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="70" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="70" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a9c0e9e816bb29f4739de10270d89ec3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>aktualisiert die bewegugn des fixsterns
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="86" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="86" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ac9f8040475297908026ede401283cc2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.animateAllChildrenFaster</definition>
+        <argsstring>(self, factor, factorMov)</argsstring>
+        <name>animateAllChildrenFaster</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>factor</type>
+          <defname>factor</defname>
+        </param>
+        <param>
+          <type>factorMov</type>
+          <defname>factorMov</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>animiert alle kindplaneten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="97" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="97" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a0f7508fe2773a8962474ae0e175ed82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.animateAllChildrenSlower</definition>
+        <argsstring>(self, factor, factorMov)</argsstring>
+        <name>animateAllChildrenSlower</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>factor</type>
+          <defname>factor</defname>
+        </param>
+        <param>
+          <type>factorMov</type>
+          <defname>factorMov</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>animiert alle kindplaneten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="109" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="109" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1a6acc0ac8f70420c7a603d8e24559842d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.disableLight</definition>
+        <argsstring>(self)</argsstring>
+        <name>disableLight</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deaktiviert das licht
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="124" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="124" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolarsystem_1_1_fixstern_1_1_fixstern_1ae7839cd6e5a154e255cb7573cab18210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def solarsystem.Fixstern.Fixstern.enableLight</definition>
+        <argsstring>(self)</argsstring>
+        <name>enableLight</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>aktiviert das licht
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="131" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="131" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+      <node id="4">
+        <label>solarsystem.Fixstern.Fixstern</label>
+        <link refid="classsolarsystem_1_1_fixstern_1_1_fixstern"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>solarsystem.Gestirn.Gestirn</label>
+        <link refid="classsolarsystem_1_1_gestirn_1_1_gestirn"/>
+      </node>
+      <node id="6">
+        <label>solarsystem.Fixstern.Fixstern</label>
+        <link refid="classsolarsystem_1_1_fixstern_1_1_fixstern"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" line="7" column="1" bodyfile="/Users/Daniel/PycharmProjects/solar01-master/solarsystem/Fixstern.py" bodystart="7" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a8132f04e2b4b418d190d810c054bdbd8" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1ac143790186d9aaec3771d4ecad388171" prot="public" virt="non-virtual" ambiguityscope="solarsystem::Gestirn::Gestirn."><scope>solarsystem::Fixstern::Fixstern</scope><name>__init__</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a87b7653b635702ae96f97bd9f3703991" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>addPlanet</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad11d5c6599be4daa4d3b79d03bbc4b6a" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>anim</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ac9f8040475297908026ede401283cc2c" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>animateAllChildrenFaster</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a0f7508fe2773a8962474ae0e175ed82f" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>animateAllChildrenSlower</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a6acc0ac8f70420c7a603d8e24559842d" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>disableLight</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1acada4e88ce2576f4f7e49153e8b8ac2e" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>divisions</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a1a42ed0c18b1f4b953bcf5cc4f1d807e" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>draw</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ae7839cd6e5a154e255cb7573cab18210" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>enableLight</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a3a0a58e8a756c1e52a6d0da8793d7cd9" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>entf_rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1aa66c00060104e69ac7d0ed12a520a22a" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>getPlanetAt</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a6276d0c9e35bdf957b8f971ee06c3988" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>getPlaneten</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a3f0d3840011a9ec70d2b7770aef2f08c" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>inialSpeeds</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a0a5d5c32e405bf22443a3ceb8cc949ba" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>isInArea</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a86cb1a3bf000562fd19939652bc2e2dd" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>licht</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1afe8e46ebe28ba4aec2dac1195fd35d03" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>movSpeed</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a361328aacfd2da4a207dbf22ee4498f1" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>planeten</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ab5a8d47fb63ee025500fbd738db7ecf8" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>position</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a19d12910c8b20b4730f508d3726890f4" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>radius</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a6252a7fb7ef936a897d5c3f2c8dfeacd" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>rotate</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1acc3916ceddb4212b98b8f3cd02b1fdb7" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>rotation</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a374591bbeda83179c747e9a0adbe53db" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>rotPoint</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ac9d43db60cc21b22a92c543c88e81b68" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>rotSpeed</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a69694d5dba732b13ef49dd1405cd63ab" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>setAbstand</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a9420414b5b36043d9a7e35cc1fd31309" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>setAnimation</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1ad15c201a05ef87cf68329b4594ab0112" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>textur</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1af15d12b9ac798f4be3c0cc1c9f5ae4a5" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>top</name></member>
+      <member refid="classsolarsystem_1_1_gestirn_1_1_gestirn_1a84331729a97e35ffdf5a1e26385163e2" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>translate</name></member>
+      <member refid="classsolarsystem_1_1_fixstern_1_1_fixstern_1a9c0e9e816bb29f4739de10270d89ec3a" prot="public" virt="non-virtual"><scope>solarsystem::Fixstern::Fixstern</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
