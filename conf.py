@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# soalr documentation build configuration file, created by
+# solar documentation build configuration file, created by
 # sphinx-quickstart on Sun Mar 29 22:54:37 2015.
 #
 # This file is execfile()d with the current directory set to its

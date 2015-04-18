@@ -1,0 +1,2 @@
+recursive-include freeglut *
+recursive-include data *
