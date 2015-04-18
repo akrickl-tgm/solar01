@@ -8,8 +8,8 @@
     
     <title>KLASSE “Galaxie” &mdash; soalr 03-29-2015 documentation</title>
     
-    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -20,9 +20,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" /> 
   </head>
   <body>
@@ -50,6 +50,88 @@
 </div>
 <div class="section" id="dokumentation">
 <h2>DOKUMENTATION<a class="headerlink" href="#dokumentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="solarsystem.Galaxie.Galaxie">
+<em class="property">class </em><tt class="descclassname">solarsystem.Galaxie.</tt><tt class="descname">Galaxie</tt><big>(</big><em>width</em>, <em>height</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.DrawGLScene">
+<tt class="descname">DrawGLScene</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.DrawGLScene"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.DrawGLScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>alle komponenten zeichnen
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.ReSizeGLScene">
+<tt class="descname">ReSizeGLScene</tt><big>(</big><em>Width</em>, <em>Height</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.ReSizeGLScene"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.ReSizeGLScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>bei veranederung der fenstergroesse, die galaxie anpassen</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.addAsteroid">
+<tt class="descname">addAsteroid</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.addAsteroid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.addAsteroid" title="Permalink to this definition">¶</a></dt>
+<dd><p>asteroidden hinzufuegen
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.disableTextures">
+<tt class="descname">disableTextures</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.disableTextures"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.disableTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>texturen deaktiviere - alles wird weiss angezeigt</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.enableTextures">
+<tt class="descname">enableTextures</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.enableTextures"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.enableTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>texturen aktivieren</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.init">
+<tt class="descname">init</tt><big>(</big><em>Width</em>, <em>Height</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>screen vorbereiten</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.keyPressed">
+<tt class="descname">keyPressed</tt><big>(</big><em>*args</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.keyPressed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.keyPressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>handling der tastaturbefehle
+:param args: eingehender tastenbefehl
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.loadPlanets">
+<tt class="descname">loadPlanets</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.loadPlanets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.loadPlanets" title="Permalink to this definition">¶</a></dt>
+<dd><p>alle planeten anlegen</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.loadTextures">
+<tt class="descname">loadTextures</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.loadTextures"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.loadTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>alle texturen laden die verwendet werden</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.pauseAll">
+<tt class="descname">pauseAll</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.pauseAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.pauseAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>methode um alle bewegungen zu pasuerien</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.playAll">
+<tt class="descname">playAll</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.playAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.playAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>methode um alle bwewgungen zu aktivieren</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Galaxie.Galaxie.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Galaxie.html#Galaxie.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Galaxie.Galaxie.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>alle komponenten aktualisierne
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 <div class="section" id="indices-and-tables">

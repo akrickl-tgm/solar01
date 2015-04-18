@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>solarsystem.Fixstern &mdash; soalr 03-29-2015 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '03-29-2015',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for solarsystem.Fixstern</h1><div class="highlight"><pre>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s">&#39;Daniel&#39;</span>
+
+<span class="kn">from</span> <span class="nn">solarsystem.Gestirn</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Light</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<div class="viewcode-block" id="Fixstern"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern">[docs]</a><span class="k">class</span> <span class="nc">Fixstern</span><span class="p">(</span><span class="n">Gestirn</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">rotSpeed</span><span class="p">,</span> <span class="n">textur</span><span class="p">,</span> <span class="n">planeten</span><span class="p">,</span> <span class="n">anim</span><span class="p">,</span> <span class="n">licht</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">divisions</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        kosnturktor um einen fixstern anzulegen</span>
+<span class="sd">        :param position: posiition</span>
+<span class="sd">        :param rotSpeed: rotationsgeschw</span>
+<span class="sd">        :param textur: textur des fixsterns</span>
+<span class="sd">        :param planeten: planeten die um ihn rotieren - koennen spaeter acuh hinuzgefuegt werden</span>
+<span class="sd">        :param anim: animation</span>
+<span class="sd">        :param licht: belichtung</span>
+<span class="sd">        :param radius: radisu</span>
+<span class="sd">        :param divisions: unterteilungen</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>  <span class="c"># Position im XYZ-Raum</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">anim</span> <span class="o">=</span> <span class="n">anim</span>  <span class="c"># Animationen an/aus</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">textur</span> <span class="o">=</span> <span class="n">textur</span>  <span class="c"># Textur</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">divisions</span> <span class="o">=</span> <span class="n">divisions</span>  <span class="c"># Unterteilungen. Mehr = feinere, schoenere Kugel</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">licht</span> <span class="o">=</span> <span class="n">licht</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rotation</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rotSpeed</span> <span class="o">=</span> <span class="n">rotSpeed</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">inialSpeeds</span> <span class="o">=</span> <span class="p">[</span><span class="n">rotSpeed</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">planeten</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span> <span class="o">=</span> <span class="n">planeten</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span> <span class="o">=</span> <span class="p">[]</span>
+
+<div class="viewcode-block" id="Fixstern.addPlanet"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.addPlanet">[docs]</a>    <span class="k">def</span> <span class="nf">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">planet</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        planeten hinzufuegen</span>
+<span class="sd">        :param planet: planet der zum fixstern hinzugefuegt wird</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">planet</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Fixstern.getPlanetAt"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.getPlanetAt">[docs]</a>    <span class="k">def</span> <span class="nf">getPlanetAt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        gibt einen planeten an einem index zurueck</span>
+<span class="sd">        :param index: index des planeten</span>
+<span class="sd">        :return: planet</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</div>
+<div class="viewcode-block" id="Fixstern.getPlaneten"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.getPlaneten">[docs]</a>    <span class="k">def</span> <span class="nf">getPlaneten</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        gitb alle planeten zurueck</span>
+<span class="sd">        :return: alle planeten</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span>
+</div>
+<div class="viewcode-block" id="Fixstern.setAnimation"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.setAnimation">[docs]</a>    <span class="k">def</span> <span class="nf">setAnimation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">anim</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        setzt die animation</span>
+<span class="sd">        :param anim: animationswert</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">anim</span> <span class="o">=</span> <span class="n">anim</span>
+
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">setAnimation</span><span class="p">(</span><span class="n">anim</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Fixstern.draw"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.draw">[docs]</a>    <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">zoom</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        zeichnet den fixstern</span>
+<span class="sd">        :param top:</span>
+<span class="sd">        :param zoom:</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">Gestirn</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">licht</span><span class="p">,</span> <span class="n">Light</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">licht</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">Gestirn</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Fixstern.update"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.update">[docs]</a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        aktualisiert die bewegugn des fixsterns</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">anim</span><span class="p">:</span>
+            <span class="n">Gestirn</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</div>
+<div class="viewcode-block" id="Fixstern.animateAllChildrenFaster"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.animateAllChildrenFaster">[docs]</a>    <span class="k">def</span> <span class="nf">animateAllChildrenFaster</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">factor</span><span class="p">,</span> <span class="n">factorMov</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        animiert alle kindplaneten schneller</span>
+<span class="sd">        :param factor: geschwindigkeitsfaktor</span>
+<span class="sd">        :param factorMov: bewegungsgeschwindigkeitfaktor</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rotSpeed</span> <span class="o">+=</span> <span class="n">factor</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">animateAllChildrenFaster</span><span class="p">(</span><span class="n">factor</span><span class="p">,</span> <span class="n">factorMov</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Fixstern.animateAllChildrenSlower"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.animateAllChildrenSlower">[docs]</a>    <span class="k">def</span> <span class="nf">animateAllChildrenSlower</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">factor</span><span class="p">,</span> <span class="n">factorMov</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        animiert alle kindplaneten langsamer</span>
+<span class="sd">        :param factor: geschwindigkeitsfaktor</span>
+<span class="sd">        :param factorMov: bewegungsgeschwindigkeitfaktor</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rotSpeed</span> <span class="o">-</span> <span class="n">factor</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">inialSpeeds</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rotSpeed</span> <span class="o">-=</span> <span class="n">factor</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rotSpeed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inialSpeeds</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">planeten</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">animateAllChildrenSlower</span><span class="p">(</span><span class="n">factor</span><span class="p">,</span> <span class="n">factorMov</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Fixstern.disableLight"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.disableLight">[docs]</a>    <span class="k">def</span> <span class="nf">disableLight</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        deaktiviert das licht</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">licht</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+</div>
+<div class="viewcode-block" id="Fixstern.enableLight"><a class="viewcode-back" href="../../doc/docsphinx/Fixstern.html#solarsystem.Fixstern.Fixstern.enableLight">[docs]</a>    <span class="k">def</span> <span class="nf">enableLight</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        aktiviert das licht</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">licht</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Herczeg Krickl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

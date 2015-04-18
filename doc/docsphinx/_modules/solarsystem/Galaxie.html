@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>solarsystem.Galaxie &mdash; soalr 03-29-2015 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '03-29-2015',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for solarsystem.Galaxie</h1><div class="highlight"><pre>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s">&#39;Astrid Krickl, Daniel Herczeg&#39;</span>
+
+<span class="kn">from</span> <span class="nn">solarsystem.Gestirn</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Texturen</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Light</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Fixstern</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">OpenGL.GL</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">OpenGL.GLU</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">OpenGL.GLUT</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Planet</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">solarsystem.Asteroid</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">ESCAPE</span> <span class="o">=</span> <span class="s">&#39;</span><span class="se">\033</span><span class="s">&#39;</span>
+
+
+<div class="viewcode-block" id="Galaxie"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie">[docs]</a><span class="k">class</span> <span class="nc">Galaxie</span><span class="p">():</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="c"># Da das Licht von open GL in Objektkoordinaten angezeigt (als Punkt) angezeigt wird,</span>
+        <span class="c"># muessen hier die Koordinaten uebergeben werden. Dazu nehme ich einfach den Nullpunkt</span>
+        <span class="c"># und verschiebe das Licht 80 Einheiten nach hinten. OpenGL behandelt die z-Achse negativ</span>
+        <span class="c"># dh ueberall, wo ich etwas nach hinten schieben moechte, muss ich (nur beim Licht) den pos.</span>
+        <span class="c"># Z-Wert hinschreiben.</span>
+        <span class="c"># Der zweite Parameter gibt die Lichtfarbe an. In diesem Fall ein leicht gruenliches</span>
+        <span class="c"># Licht mit 100 Prozent Alpha</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">light</span> <span class="o">=</span> <span class="n">Light</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">80</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="bp">False</span>  <span class="c"># Kameraansicht</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mod</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c"># modus texturen an oder aus</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lights</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">anim</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+
+        <span class="c"># Die ganzen Objektattribute hier leer initialisieren, einfach, weil das</span>
+        <span class="c"># die korrekte Python Sprachsyntax besagt.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">erdenTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jupiterTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">marsTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">merkurTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mondTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">neptunTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plutoTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">saturnTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonnenTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uranusTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">venusTextur</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">asteroidTextur</span> <span class="o">=</span> <span class="bp">None</span>
+
+<div class="viewcode-block" id="Galaxie.loadTextures"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.loadTextures">[docs]</a>    <span class="k">def</span> <span class="nf">loadTextures</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        alle texturen laden die verwendet werden</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">erdenTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/erde.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jupiterTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/jupiter.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">marsTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/mars.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">merkurTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/merkur.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mondTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/mond.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">neptunTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/neptun.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plutoTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/pluto.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">saturnTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/saturn.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonnenTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/sonne.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uranusTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/uranus.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">venusTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/venus.jpg&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">asteroidTextur</span> <span class="o">=</span> <span class="n">Texturen</span><span class="o">.</span><span class="n">LoadTexture</span><span class="p">(</span><span class="s">&quot;../data/asteroid.jpg&quot;</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Galaxie.pauseAll"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.pauseAll">[docs]</a>    <span class="k">def</span> <span class="nf">pauseAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        methode um alle bewegungen zu pasuerien</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">setAnimation</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Galaxie.playAll"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.playAll">[docs]</a>    <span class="k">def</span> <span class="nf">playAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        methode um alle bwewgungen zu aktivieren</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">setAnimation</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Galaxie.loadPlanets"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.loadPlanets">[docs]</a>    <span class="k">def</span> <span class="nf">loadPlanets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        alle planeten anlegen</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c"># Parameter(Planet): (position, anim, rotation, rotSpeed, rotPoint, movSpeed, radius, textur, divisions, monde)</span>
+        <span class="c"># Parameter(Fixstern): (position, rotSpeed, textur, planeten, anim, licht, radius, divisions)</span>
+        <span class="c"># Parameter(Mond): (anim, rotation, rotSpeed, parent, entf_rotPoint, movSpeed, radius, textur, divisions)</span>
+        <span class="c"># Fixstern</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span> <span class="o">=</span> <span class="n">Fixstern</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="mf">0.2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonnenTextur</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">light</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+
+        <span class="c"># Planeten</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">merkur</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">17</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">merkurTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">venus</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mf">20.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.000125</span><span class="p">,</span> <span class="mf">1.21</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">venusTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">erde</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">29</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">1.5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.0006</span><span class="p">,</span> <span class="mf">1.28</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">erdenTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mars</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mf">36.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.0009</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">marsTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jupiter</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">59</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.00035</span><span class="p">,</span> <span class="mf">14.3</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">jupiterTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">saturn</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">85</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.00056</span><span class="p">,</span> <span class="mf">12.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">saturnTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uranus</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">98</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.0004</span><span class="p">,</span> <span class="mf">5.11</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">uranusTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">neptun</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">115</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.00087</span><span class="p">,</span> <span class="mf">4.95</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">neptunTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pluto</span> <span class="o">=</span> <span class="n">Planet</span><span class="p">([</span><span class="o">-</span><span class="mi">125</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.05</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="mf">0.00025</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">plutoTextur</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+
+        <span class="c"># Monde</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mond</span> <span class="o">=</span> <span class="n">Mond</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">erde</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mondTextur</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">erde</span><span class="o">.</span><span class="n">addMond</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mond</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">erde</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jupiter</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mars</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">merkur</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">neptun</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pluto</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">saturn</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uranus</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">addPlanet</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">venus</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">addAsteroid</span><span class="p">()</span>
+</div>
+<div class="viewcode-block" id="Galaxie.enableTextures"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.enableTextures">[docs]</a>    <span class="k">def</span> <span class="nf">enableTextures</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        texturen aktivieren</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">glEnable</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Galaxie.disableTextures"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.disableTextures">[docs]</a>    <span class="k">def</span> <span class="nf">disableTextures</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        texturen deaktiviere - alles wird weiss angezeigt</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">glDisable</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Galaxie.init"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.init">[docs]</a>    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Width</span><span class="p">,</span> <span class="n">Height</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        screen vorbereiten</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">glClearColor</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>    <span class="c"># Hintergrundfarbe</span>
+        <span class="n">glClearDepth</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>                   <span class="c"># Loeschen des Depth Buffers</span>
+        <span class="n">glDepthFunc</span><span class="p">(</span><span class="n">GL_LESS</span><span class="p">)</span>                <span class="c"># The Type Of Depth Test To Do</span>
+        <span class="n">glEnable</span><span class="p">(</span><span class="n">GL_DEPTH_TEST</span><span class="p">)</span>             <span class="c"># Enables Depth Testing</span>
+        <span class="n">glShadeModel</span><span class="p">(</span><span class="n">GL_SMOOTH</span><span class="p">)</span>             <span class="c"># Enables Smooth Color Shading</span>
+
+        <span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">)</span>         <span class="c"># Reset The Projection Matrix</span>
+        <span class="n">glLoadIdentity</span><span class="p">()</span>
+
+        <span class="c"># Calculate The Aspect Ratio Of The Window</span>
+        <span class="n">gluPerspective</span><span class="p">(</span><span class="mf">45.0</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">Width</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">Height</span><span class="p">),</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">100000.0</span><span class="p">)</span>
+        <span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">)</span>
+
+        <span class="n">glutKeyboardFunc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">keyPressed</span><span class="p">)</span>  <span class="c"># steuerung ueber die tatstatur aktivieren</span>
+
+        <span class="c"># Licht initialisieren</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">light</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loadTextures</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loadPlanets</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">enableTextures</span><span class="p">()</span>
+</div>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wenn die groesse vom Fenster geaendert wird</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="Galaxie.ReSizeGLScene"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.ReSizeGLScene">[docs]</a>    <span class="k">def</span> <span class="nf">ReSizeGLScene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Width</span><span class="p">,</span> <span class="n">Height</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        bei veranederung der fenstergroesse, die galaxie anpassen</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c"># Wenn das Fenster zu klein ist, erhoehen auf 1</span>
+        <span class="k">if</span> <span class="n">Height</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">Height</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="n">glViewport</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Width</span><span class="p">,</span> <span class="n">Height</span><span class="p">)</span>  <span class="c"># Reset The Current Viewport And Perspective Transformation</span>
+        <span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">)</span>
+        <span class="n">glLoadIdentity</span><span class="p">()</span>
+
+        <span class="c"># Perspektive</span>
+        <span class="n">gluPerspective</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">Width</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">Height</span><span class="p">),</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">100000.0</span><span class="p">)</span>  <span class="c"># Naehe</span>
+        <span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">Width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">Height</span>
+</div>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    szene zeichenn</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="Galaxie.DrawGLScene"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.DrawGLScene">[docs]</a>    <span class="k">def</span> <span class="nf">DrawGLScene</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        alle komponenten zeichnen</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+        <span class="n">glClear</span><span class="p">(</span><span class="n">GL_COLOR_BUFFER_BIT</span> <span class="o">|</span> <span class="n">GL_DEPTH_BUFFER_BIT</span><span class="p">)</span>  <span class="c"># Screen loeschen und depth buffer loeschen</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">)):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="n">glutSwapBuffers</span><span class="p">()</span>  <span class="c"># zeichnen</span>
+</div>
+<div class="viewcode-block" id="Galaxie.update"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.update">[docs]</a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        alle komponenten aktualisierne</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">)):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">valid</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">addAsteroid</span><span class="p">()</span>
+</div>
+<div class="viewcode-block" id="Galaxie.addAsteroid"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.addAsteroid">[docs]</a>    <span class="k">def</span> <span class="nf">addAsteroid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        asteroidden hinzufuegen</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+        <span class="n">dir_x</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+        <span class="n">dir_y</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+        <span class="n">dir_z</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+
+        <span class="n">speed</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">speed</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">speed</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="n">rot_speed</span> <span class="o">=</span> <span class="n">random</span><span class="p">()</span>
+        <span class="n">radius</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="n">divisions</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">asteroiden</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Asteroid</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">],</span> <span class="p">[</span><span class="n">dir_x</span><span class="p">,</span> <span class="n">dir_y</span><span class="p">,</span> <span class="n">dir_z</span><span class="p">],</span> <span class="n">speed</span><span class="p">,</span> <span class="n">rot_speed</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">anim</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">asteroidTextur</span><span class="p">,</span> <span class="n">divisions</span><span class="p">))</span>
+</div>
+<div class="viewcode-block" id="Galaxie.keyPressed"><a class="viewcode-back" href="../../doc/docsphinx/Galaxie.html#solarsystem.Galaxie.Galaxie.keyPressed">[docs]</a>    <span class="k">def</span> <span class="nf">keyPressed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        handling der tastaturbefehle</span>
+<span class="sd">        :param args: eingehender tastenbefehl</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;p&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">anim</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pauseAll</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">anim</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">playAll</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">anim</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;c&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;t&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mod</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">disableTextures</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">mod</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">enableTextures</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">mod</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;l&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">lights</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">disableLight</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">lights</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">enableLight</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">lights</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;w&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">animateAllChildrenFaster</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;s&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sonne</span><span class="o">.</span><span class="n">animateAllChildrenSlower</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;+&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span> <span class="o">+=</span> <span class="mi">5</span>
+
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="s">&#39;-&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">zoom</span> <span class="o">-=</span> <span class="mi">5</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Herczeg Krickl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

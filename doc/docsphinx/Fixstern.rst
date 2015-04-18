@@ -12,16 +12,16 @@ Contents:
    :maxdepth: 2
 
    
-DOKUMENTATION
+Dokumentation
 --------------
 
-.. py:currentmodule:: solarsystem
+.. py:currentmodule:: solarsystem.Fixstern
 .. autoclass:: Fixstern
 	:members:
 
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`

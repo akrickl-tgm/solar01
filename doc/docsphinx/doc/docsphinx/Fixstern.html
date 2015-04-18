@@ -23,7 +23,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" /> 
+    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" />
+    <link rel="next" title="KLASSE “Gestirn”" href="Gestirn.html" />
+    <link rel="prev" title="KLASSE “Texturen”" href="Texturen.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Gestirn.html" title="KLASSE “Gestirn”"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Texturen.html" title="KLASSE “Texturen”"
+             accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -49,16 +57,100 @@
 </ul>
 </div>
 <div class="section" id="dokumentation">
-<h2>DOKUMENTATION<a class="headerlink" href="#dokumentation" title="Permalink to this headline">¶</a></h2>
-</div>
+<h2>Dokumentation<a class="headerlink" href="#dokumentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="solarsystem.Fixstern.Fixstern">
+<em class="property">class </em><tt class="descclassname">solarsystem.Fixstern.</tt><tt class="descname">Fixstern</tt><big>(</big><em>position</em>, <em>rotSpeed</em>, <em>textur</em>, <em>planeten</em>, <em>anim</em>, <em>licht</em>, <em>radius</em>, <em>divisions</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.addPlanet">
+<tt class="descname">addPlanet</tt><big>(</big><em>planet</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.addPlanet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.addPlanet" title="Permalink to this definition">¶</a></dt>
+<dd><p>planeten hinzufuegen
+:param planet: planet der zum fixstern hinzugefuegt wird
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.animateAllChildrenFaster">
+<tt class="descname">animateAllChildrenFaster</tt><big>(</big><em>factor</em>, <em>factorMov</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.animateAllChildrenFaster"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.animateAllChildrenFaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>animiert alle kindplaneten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.animateAllChildrenSlower">
+<tt class="descname">animateAllChildrenSlower</tt><big>(</big><em>factor</em>, <em>factorMov</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.animateAllChildrenSlower"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.animateAllChildrenSlower" title="Permalink to this definition">¶</a></dt>
+<dd><p>animiert alle kindplaneten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.disableLight">
+<tt class="descname">disableLight</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.disableLight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.disableLight" title="Permalink to this definition">¶</a></dt>
+<dd><p>deaktiviert das licht
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.draw">
+<tt class="descname">draw</tt><big>(</big><em>top</em>, <em>zoom</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.draw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>zeichnet den fixstern
+:param top:
+:param zoom:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.enableLight">
+<tt class="descname">enableLight</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.enableLight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.enableLight" title="Permalink to this definition">¶</a></dt>
+<dd><p>aktiviert das licht
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.getPlanetAt">
+<tt class="descname">getPlanetAt</tt><big>(</big><em>index</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.getPlanetAt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.getPlanetAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>gibt einen planeten an einem index zurueck
+:param index: index des planeten
+:return: planet</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.getPlaneten">
+<tt class="descname">getPlaneten</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.getPlaneten"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.getPlaneten" title="Permalink to this definition">¶</a></dt>
+<dd><p>gitb alle planeten zurueck
+:return: alle planeten</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.setAnimation">
+<tt class="descname">setAnimation</tt><big>(</big><em>anim</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.setAnimation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.setAnimation" title="Permalink to this definition">¶</a></dt>
+<dd><p>setzt die animation
+:param anim: animationswert
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Fixstern.Fixstern.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Fixstern.html#Fixstern.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Fixstern.Fixstern.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>aktualisiert die bewegugn des fixsterns
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="../../genindex.html"><em>Index</em></a></li>
 <li><a class="reference internal" href="../../py-modindex.html"><em>Module Index</em></a></li>
 <li><a class="reference internal" href="../../search.html"><em>Search Page</em></a></li>
 </ul>
+</div>
 </div>
 
 
@@ -70,12 +162,18 @@
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">KLASSE &#8220;Fixstern&#8221;</a><ul>
-<li><a class="reference internal" href="#dokumentation">DOKUMENTATION</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#dokumentation">Dokumentation</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
+</li>
+</ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Texturen.html"
+                        title="previous chapter">KLASSE &#8220;Texturen&#8221;</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Gestirn.html"
+                        title="next chapter">KLASSE &#8220;Gestirn&#8221;</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/doc/docsphinx/Fixstern.txt"
@@ -104,6 +202,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="Gestirn.html" title="KLASSE “Gestirn”"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Texturen.html" title="KLASSE “Texturen”"
+             >previous</a> |</li>
         <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li> 
       </ul>
     </div>

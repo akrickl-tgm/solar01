@@ -8,8 +8,8 @@
     
     <title>KLASSE “Gestirn” &mdash; soalr 03-29-2015 documentation</title>
     
-    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -20,9 +20,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" /> 
   </head>
   <body>
@@ -50,6 +50,69 @@
 </div>
 <div class="section" id="dokumentation">
 <h2>DOKUMENTATION<a class="headerlink" href="#dokumentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="solarsystem.Gestirn.Gestirn">
+<em class="property">class </em><tt class="descclassname">solarsystem.Gestirn.</tt><tt class="descname">Gestirn</tt><big>(</big><em>position</em>, <em>anim</em>, <em>rotation</em>, <em>rotSpeed</em>, <em>rotPoint</em>, <em>entf_rotPoint</em>, <em>movSpeed</em>, <em>radius</em>, <em>textur</em>, <em>divisions</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.draw">
+<tt class="descname">draw</tt><big>(</big><em>top</em>, <em>zoom</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.draw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>zeichent das gestrin
+:param top:
+:param zoom:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.isInArea">
+<tt class="descname">isInArea</tt><big>(</big><em>width</em>, <em>height</em>, <em>depth</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.isInArea"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.isInArea" title="Permalink to this definition">¶</a></dt>
+<dd><p>ob ein planet im sichtfeld ist
+:param width:
+:param height:
+:param depth:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.rotate">
+<tt class="descname">rotate</tt><big>(</big><em>rotation</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.rotate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.rotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>dreht den himmelskoerper
+:param rotation:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.setAbstand">
+<tt class="descname">setAbstand</tt><big>(</big><em>abstand</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.setAbstand"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.setAbstand" title="Permalink to this definition">¶</a></dt>
+<dd><p>abstand der gestrine setzen
+:param abstand: abstand auf den es gesetzt wird
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.setAnimation">
+<tt class="descname">setAnimation</tt><big>(</big><em>anim</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.setAnimation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.setAnimation" title="Permalink to this definition">¶</a></dt>
+<dd><p>setzt die animation
+:param anim: true oder false ob es sich bewegen soll
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.translate">
+<tt class="descname">translate</tt><big>(</big><em>pos</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.translate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.translate" title="Permalink to this definition">¶</a></dt>
+<dd><p>bewegt das gestirn weiter
+:param pos: position um die es weiter bewegt wird
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Gestirn.Gestirn.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Gestirn.html#Gestirn.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Gestirn.Gestirn.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Beim update einfach immer den Himmelskoerper um seine eigene achste rotieren
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 <div class="section" id="indices-and-tables">

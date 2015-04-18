@@ -23,7 +23,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" /> 
+    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" />
+    <link rel="next" title="KLASSE “splashscreen”" href="splashscreen.html" />
+    <link rel="prev" title="KLASSE “Mond”" href="Mond.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="splashscreen.html" title="KLASSE “splashscreen”"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Mond.html" title="KLASSE “Mond”"
+             accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -50,15 +58,99 @@
 </div>
 <div class="section" id="dokumentation">
 <h2>DOKUMENTATION<a class="headerlink" href="#dokumentation" title="Permalink to this headline">¶</a></h2>
-</div>
+<dl class="class">
+<dt id="solarsystem.Planet.Planet">
+<em class="property">class </em><tt class="descclassname">solarsystem.Planet.</tt><tt class="descname">Planet</tt><big>(</big><em>position</em>, <em>anim</em>, <em>rotation</em>, <em>rotSpeed</em>, <em>rotPoint</em>, <em>movSpeed</em>, <em>radius</em>, <em>textur</em>, <em>divisions</em>, <em>monde</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="solarsystem.Planet.Planet.addMond">
+<tt class="descname">addMond</tt><big>(</big><em>m</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.addMond"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.addMond" title="Permalink to this definition">¶</a></dt>
+<dd><p>fuegt einen mond hinzu
+:param m: mond
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.animateAllChildrenFaster">
+<tt class="descname">animateAllChildrenFaster</tt><big>(</big><em>factor</em>, <em>factorMov</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.animateAllChildrenFaster"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.animateAllChildrenFaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>animiert planeten schneller
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.animateAllChildrenSlower">
+<tt class="descname">animateAllChildrenSlower</tt><big>(</big><em>factor</em>, <em>factorMov</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.animateAllChildrenSlower"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.animateAllChildrenSlower" title="Permalink to this definition">¶</a></dt>
+<dd><p>animiert planeten langsamer
+:param factor: geschwindigkeitsfaktor
+:param factorMov: bewegungsgeschwindigkeitfaktor
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.createMond">
+<tt class="descname">createMond</tt><big>(</big><em>rotation</em>, <em>rotSpeed</em>, <em>entf_rotPoint</em>, <em>movSpeed</em>, <em>radius</em>, <em>textur</em>, <em>divisions</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.createMond"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.createMond" title="Permalink to this definition">¶</a></dt>
+<dd><p>bildet einen mond und fuegt ign hinzu
+:param rotation: roation
+:param rotSpeed: rotationsgeschw
+:param entf_rotPoint: roatations entfernung zum planeten
+:param movSpeed: bewegungsgeschw
+:param radius: radius
+:param textur: textur vom mond
+:param divisions: unterteilungen
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.draw">
+<tt class="descname">draw</tt><big>(</big><em>top</em>, <em>zoom</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.draw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>zeichnet den planeten
+:param top:
+:param zoom:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.getMondAt">
+<tt class="descname">getMondAt</tt><big>(</big><em>index</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.getMondAt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.getMondAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>gibt dem mond am index zurueck
+:param index: vom mond
+:return: mon am angegeben index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.getMonde">
+<tt class="descname">getMonde</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.getMonde"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.getMonde" title="Permalink to this definition">¶</a></dt>
+<dd><p>gibt alle monde zurueck
+:return: alle minde</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.setAnimation">
+<tt class="descname">setAnimation</tt><big>(</big><em>anim</em><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.setAnimation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.setAnimation" title="Permalink to this definition">¶</a></dt>
+<dd><p>animation hinzufuegen
+:param anim: animation die hinzugefuegt wird
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="solarsystem.Planet.Planet.update">
+<tt class="descname">update</tt><big>(</big><big>)</big><a class="reference internal" href="../../_modules/solarsystem/Planet.html#Planet.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#solarsystem.Planet.Planet.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>aktualisiert die animation des planeten
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="../../genindex.html"><em>Index</em></a></li>
 <li><a class="reference internal" href="../../py-modindex.html"><em>Module Index</em></a></li>
 <li><a class="reference internal" href="../../search.html"><em>Search Page</em></a></li>
 </ul>
+</div>
 </div>
 
 
@@ -71,11 +163,17 @@
   <ul>
 <li><a class="reference internal" href="#">KLASSE &#8220;Planet&#8221;</a><ul>
 <li><a class="reference internal" href="#dokumentation">DOKUMENTATION</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
+</li>
+</ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Mond.html"
+                        title="previous chapter">KLASSE &#8220;Mond&#8221;</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="splashscreen.html"
+                        title="next chapter">KLASSE &#8220;splashscreen&#8221;</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/doc/docsphinx/Planet.txt"
@@ -104,6 +202,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="splashscreen.html" title="KLASSE “splashscreen”"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Mond.html" title="KLASSE “Mond”"
+             >previous</a> |</li>
         <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li> 
       </ul>
     </div>

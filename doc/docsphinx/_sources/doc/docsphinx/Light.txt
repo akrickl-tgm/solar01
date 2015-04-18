@@ -15,7 +15,7 @@ Contents:
 DOKUMENTATION
 --------------
 
-.. py:currentmodule:: solarsystem
+.. py:currentmodule:: solarsystem.Light
 .. autoclass:: Light
 	:members:
 

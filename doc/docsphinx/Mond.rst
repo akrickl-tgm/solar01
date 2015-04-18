@@ -15,7 +15,7 @@ Contents:
 DOKUMENTATION
 --------------
 
-.. py:currentmodule:: solarsystem
+.. py:currentmodule:: solarsystem.Mond
 .. autoclass:: Mond
 	:members:
 

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>solarsystem.splashscreen &mdash; soalr 03-29-2015 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '03-29-2015',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="soalr 03-29-2015 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for solarsystem.splashscreen</h1><div class="highlight"><pre>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">tkinter</span>
+
+
+<div class="viewcode-block" id="Splash"><a class="viewcode-back" href="../../doc/docsphinx/splashscreen.html#solarsystem.splashscreen.Splash">[docs]</a><span class="k">class</span> <span class="nc">Splash</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">wait</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        kosntrukotr initialisierng der variablen</span>
+<span class="sd">        :param root: wo das fenster aufgerufen wird</span>
+<span class="sd">        :param file: bild dass angezeigt werden soll</span>
+<span class="sd">        :param wait: wie lange der screen angezeigt werden soll</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span> <span class="o">=</span> <span class="n">root</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__file</span> <span class="o">=</span> <span class="nb">file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__wait</span> <span class="o">=</span> <span class="n">wait</span> <span class="o">+</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        oeffent den splashscreen</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c"># Hide the root while it is built.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
+        <span class="c"># Create components of splash screen.</span>
+        <span class="n">window</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Toplevel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="p">)</span>
+        <span class="n">canvas</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">window</span><span class="p">)</span>
+        <span class="n">splash</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">master</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__file</span><span class="p">)</span>
+        <span class="c"># Get the screen&#39;s width and height.</span>
+        <span class="n">scrW</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">winfo_screenwidth</span><span class="p">()</span>
+        <span class="n">scrH</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">winfo_screenheight</span><span class="p">()</span>
+        <span class="c"># Get the images&#39;s width and height.</span>
+        <span class="n">imgW</span> <span class="o">=</span> <span class="n">splash</span><span class="o">.</span><span class="n">width</span><span class="p">()</span>
+        <span class="n">imgH</span> <span class="o">=</span> <span class="n">splash</span><span class="o">.</span><span class="n">height</span><span class="p">()</span>
+        <span class="c"># Compute positioning for splash screen.</span>
+        <span class="n">Xpos</span> <span class="o">=</span> <span class="p">(</span><span class="n">scrW</span> <span class="o">-</span> <span class="n">imgW</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">Ypos</span> <span class="o">=</span> <span class="p">(</span><span class="n">scrH</span> <span class="o">-</span> <span class="n">imgH</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="c"># Configure the window showing the logo.</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">overrideredirect</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="s">&#39;+{}+{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Xpos</span><span class="p">,</span> <span class="n">Ypos</span><span class="p">))</span>
+        <span class="c"># Setup canvas on which image is drawn.</span>
+        <span class="n">canvas</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">imgW</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">imgH</span><span class="p">,</span> <span class="n">highlightthickness</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">canvas</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="c"># Show the splash screen on the monitor.</span>
+        <span class="n">canvas</span><span class="o">.</span><span class="n">create_image</span><span class="p">(</span><span class="n">imgW</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">imgH</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">splash</span><span class="p">)</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+        <span class="c"># Save the variables for later cleanup.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__window</span> <span class="o">=</span> <span class="n">window</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__canvas</span> <span class="o">=</span> <span class="n">canvas</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__splash</span> <span class="o">=</span> <span class="n">splash</span>
+
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        schliesst den splashscreen</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c"># Ensure that required time has passed.</span>
+        <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">now</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">__wait</span><span class="p">:</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__wait</span> <span class="o">-</span> <span class="n">now</span><span class="p">)</span>
+        <span class="c"># Free used resources in reverse order.</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">__splash</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__canvas</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__window</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="c"># Give control back to the root program.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="o">.</span><span class="n">update_idletasks</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="o">.</span><span class="n">deiconify</span><span class="p">()</span>
+</pre></div></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../index.html">soalr 03-29-2015 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Herczeg Krickl.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

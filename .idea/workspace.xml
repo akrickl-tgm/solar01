@@ -2,19 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7a213b-a636-4d37-9878-704ed8999682" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Asteroid.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Fixstern.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Galaxie.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Gestirn.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Light.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Mond.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Planet.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\Texturen.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\conf.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\index.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\make.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\splashscreen.rst" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Asi\PycharmProjects\solar01\doc\docsphinx\index.rst" afterPath="$PROJECT_DIR$/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Asteroid.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Asteroid.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Fixstern.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Fixstern.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Galaxie.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Galaxie.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Gestirn.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Gestirn.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Light.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Light.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Mond.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Mond.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Planet.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Planet.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Texturen.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/Texturen.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/index.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/splashscreen.doctree" afterPath="$PROJECT_DIR$/doc/docsphinx/.doctrees/doc/docsphinx/splashscreen.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Asteroid.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Asteroid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Asteroid.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Asteroid.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Asteroid.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Asteroid.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Fixstern.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Fixstern.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Fixstern.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Fixstern.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Fixstern.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Fixstern.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Galaxie.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Galaxie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Galaxie.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Galaxie.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Galaxie.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Galaxie.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Gestirn.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Gestirn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Gestirn.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Gestirn.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Gestirn.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Gestirn.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Light.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Light.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Light.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Light.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Light.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Light.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Mond.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Mond.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Mond.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Mond.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Mond.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Mond.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Planet.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Planet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Planet.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Planet.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Planet.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Planet.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Texturen.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/Texturen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/Texturen.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/Texturen.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Texturen.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Texturen.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/index.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/splashscreen.html" afterPath="$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/splashscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/splashscreen.rst" afterPath="$PROJECT_DIR$/doc/docsphinx/splashscreen.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/splashscreen.txt" afterPath="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/splashscreen.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="solar01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +55,10 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/solar01$conf.coverage" NAME="conf Coverage Results" MODIFIED="1427662157245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc" />
-    <SUITE FILE_PATH="coverage/solar01$test.coverage" NAME="test Coverage Results" MODIFIED="1425895711460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/astrid" />
     <SUITE FILE_PATH="coverage/solar01$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1427657225427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solarsystem" />
+    <SUITE FILE_PATH="coverage/solar01$test.coverage" NAME="test Coverage Results" MODIFIED="1425895711460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/astrid" />
     <SUITE FILE_PATH="coverage/solar01$start.coverage" NAME="start Coverage Results" MODIFIED="1427625590876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/astrid" />
-    <SUITE FILE_PATH="coverage/solar01$sphinx_solar.coverage" NAME="sphinx_solar Coverage Results" MODIFIED="1427663201514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/solar01$sphinx_solar.coverage" NAME="sphinx_solar Coverage Results" MODIFIED="1428921523968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/solar01$Unittests_in_test_gestirn.coverage" NAME="Unittests in test_gestirn Coverage Results" MODIFIED="1427633208706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solarsystem/test" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -46,11 +73,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Texturen.rst" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Texturen.rst" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/docsphinx/Texturen.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7153465" vertical-offset="0" max-vertical-offset="595">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="646">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gestirn.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Gestirn.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Light.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Light.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mond.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Mond.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planet.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Planet.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43569553" vertical-offset="89" max-vertical-offset="646">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Asteroid.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Asteroid.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="595">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fixstern.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/Fixstern.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="595">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splashscreen.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docsphinx/splashscreen.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -73,16 +190,17 @@
         <option value="$PROJECT_DIR$/doc/conf.py" />
         <option value="$PROJECT_DIR$/doc/docsphinx/conf.py" />
         <option value="$PROJECT_DIR$/doc/docsphinx/_sources/doc/docsphinx/Galaxie.txt" />
-        <option value="$PROJECT_DIR$/doc/docsphinx/Asteroid.rst" />
-        <option value="$PROJECT_DIR$/doc/docsphinx/Fixstern.rst" />
+        <option value="$PROJECT_DIR$/doc/docsphinx/index.rst" />
+        <option value="$PROJECT_DIR$/doc/docsphinx/splashscreen.rst" />
+        <option value="$PROJECT_DIR$/doc/docsphinx/Texturen.rst" />
         <option value="$PROJECT_DIR$/doc/docsphinx/Galaxie.rst" />
         <option value="$PROJECT_DIR$/doc/docsphinx/Gestirn.rst" />
         <option value="$PROJECT_DIR$/doc/docsphinx/Light.rst" />
         <option value="$PROJECT_DIR$/doc/docsphinx/Mond.rst" />
+        <option value="$PROJECT_DIR$/index.rst" />
+        <option value="$PROJECT_DIR$/doc/docsphinx/Fixstern.rst" />
+        <option value="$PROJECT_DIR$/doc/docsphinx/Asteroid.rst" />
         <option value="$PROJECT_DIR$/doc/docsphinx/Planet.rst" />
-        <option value="$PROJECT_DIR$/doc/docsphinx/Texturen.rst" />
-        <option value="$PROJECT_DIR$/doc/docsphinx/splashscreen.rst" />
-        <option value="$PROJECT_DIR$/doc/docsphinx/index.rst" />
       </list>
     </option>
   </component>
@@ -150,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="solarsystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -167,10 +285,6 @@
               <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docsphinx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -179,14 +293,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="solar01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docsphinx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -396,6 +502,23 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="solar01" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -414,23 +537,6 @@
       <option name="docutils_open_in_browser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="solar01" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="docs" factoryName="Sphinx task">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -447,9 +553,6 @@
       <option name="docutils_params" value="" />
       <option name="docutils_task" value="html" />
       <option name="docutils_open_in_browser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -473,6 +576,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -556,10 +662,10 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.start" />
-      <item index="2" class="java.lang.String" itemvalue="Python.start (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.conf" />
-      <item index="4" class="java.lang.String" itemvalue="Python docs.sphinx_solar" />
+      <item index="1" class="java.lang.String" itemvalue="Python docs.sphinx_solar" />
+      <item index="2" class="java.lang.String" itemvalue="Python.start" />
+      <item index="3" class="java.lang.String" itemvalue="Python.start (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.conf" />
       <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_gestirn" />
     </list>
     <recent_temporary>
@@ -600,13 +706,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -631,13 +737,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
@@ -925,11 +1024,11 @@
           <OriginalElement>#/Users/Daniel/Documents/Solar/solarsystem/Galaxie.py</OriginalElement>
           <nodes>
             <node x="1206.228310502283" y="1035.9748858447488">solarsystem.Asteroid.Asteroid</node>
-            <node x="1493.9748858447488" y="572.0114155251142">solarsystem.Mond.Mond</node>
             <node x="678.933789954338" y="168.29908675799095">solarsystem.splashscreen.Splash</node>
+            <node x="1493.9748858447488" y="572.0114155251142">solarsystem.Mond.Mond</node>
             <node x="-448.74657534246535" y="458.0045662100456">solarsystem.Light.Light</node>
-            <node x="777.9543378995431" y="288.7990867579909">solarsystem.Planet.Planet</node>
             <node x="282.7625570776256" y="668.3059360730593">solarsystem.Fixstern.Fixstern</node>
+            <node x="777.9543378995431" y="288.7990867579909">solarsystem.Planet.Planet</node>
             <node x="221.5" y="0.0">_collections_abc.Hashable</node>
             <node x="0.0" y="123.0">object</node>
             <node x="-289.4703196347032" y="646.4611872146119">solarsystem.Galaxie.Galaxie</node>
@@ -938,11 +1037,11 @@
           </nodes>
           <notes />
           <edges>
-            <edge source="solarsystem.Gestirn.Gestirn" target="object">
+            <edge source="solarsystem.Mond.Mond" target="solarsystem.Gestirn.Gestirn">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="solarsystem.Mond.Mond" target="solarsystem.Gestirn.Gestirn">
+            <edge source="solarsystem.Gestirn.Gestirn" target="object">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -954,11 +1053,11 @@
               <point x="0.0" y="-157.5" />
               <point x="0.0" y="234.5" />
             </edge>
-            <edge source="solarsystem.Asteroid.Asteroid" target="solarsystem.Gestirn.Gestirn">
+            <edge source="solarsystem.Planet.Planet" target="solarsystem.Gestirn.Gestirn">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="solarsystem.Planet.Planet" target="solarsystem.Gestirn.Gestirn">
+            <edge source="solarsystem.Asteroid.Asteroid" target="solarsystem.Gestirn.Gestirn">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -990,21 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61290324" vertical-offset="0" max-vertical-offset="570">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2499">
-          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4573">
@@ -1017,47 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Asteroid.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Galaxie.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Gestirn.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Fixstern.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solarsystem/Fixstern.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="2380">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,46 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26980197" vertical-offset="112" max-vertical-offset="646">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Light.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7153465" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Mond.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7153465" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Planet.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7153465" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docsphinx/splashscreen.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21039604" vertical-offset="0" max-vertical-offset="595">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1117,10 +1120,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/doc/docsphinx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solarsystem/Fixstern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="2380">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solarsystem/Gestirn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Galaxie.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Gestirn.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Light.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Mond.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/splashscreen.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doc/docsphinx/Texturen.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7153465" vertical-offset="0" max-vertical-offset="595">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="646">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Asteroid.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="595">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Fixstern.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="595">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docsphinx/Planet.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solarsystem/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43569553" vertical-offset="89" max-vertical-offset="646">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -13,15 +13,15 @@ Contents:
 
    
 DOKUMENTATION
---------------
+-------------
 
-.. py:currentmodule:: solarsystem
+.. py:currentmodule:: solarsystem.Planet
 .. autoclass:: Planet
 	:members:
 
 
 Indices and tables
-==================
+-----------------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
