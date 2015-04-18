@@ -1,7 +1,5 @@
 __author__ = 'Astrid Krickl, Daniel Herczeg'
 
-from OpenGL.GL import *
-from OpenGL.GLU import *
 from solarsystem.Texturen import *
 
 

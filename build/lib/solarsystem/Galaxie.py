@@ -1,12 +1,6 @@
 __author__ = 'Astrid Krickl, Daniel Herczeg'
 
-from solarsystem.Gestirn import *
-from solarsystem.Texturen import *
-from solarsystem.Light import *
 from solarsystem.Fixstern import *
-from OpenGL.GL import *
-from OpenGL.GLU import *
-from OpenGL.GLUT import *
 from solarsystem.Planet import *
 from solarsystem.Asteroid import *
 from random import *

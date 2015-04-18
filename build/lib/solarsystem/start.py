@@ -9,6 +9,7 @@ width = 1000
 height = 600
 
 def main(sc):
+        """
         # splashscreen
         tkRoot = tkinter.Tk()
         s = Splash(tkRoot, '../data/splash.gif', 2.0)
@@ -17,6 +18,7 @@ def main(sc):
 
         # basis fenster schließen
         tkRoot.withdraw()
+        """
 
         #solarsystem
         glutInit(sys.argv)
